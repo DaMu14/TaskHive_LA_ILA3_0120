@@ -49,7 +49,7 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 | 7.1  | Webseite gestartet          | Eikaufsliste erstellen auswählen             | Einkaufsliste wurde erstellt                   |
 | 8.1  | Webseite gestartet          | Element zu Eikaufsliste hinzufügen auswählen | Element wurde zu der Einkaufsliste hinzugefügt |
 | 9.1  | Webseite gestartet          | Element bearbeiten auswählen                 | Element kann bearbeitet werden                 |
-| 10.1 | Element aus List ausgewählt | Element löschen wählen                       | Element wird aus List entfernt                 |
+| 10.1 | Element aus List ausgewählt | Element löschen auswählen                       | Element wird aus List entfernt                 |
 | 11.1 | Datum hinzufügen ausgewählt | Datum eingeben                               | Datum wird gespeichert                         |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
