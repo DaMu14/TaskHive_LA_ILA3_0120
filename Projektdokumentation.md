@@ -4,28 +4,36 @@
 
 ✍️ Ihr Gruppenname und Ihre Nachnamen
 
-| Datum | Version | Zusammenfassung                                              |
-| ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
-|       | ...     |                                                              |
-|       | 1.0.0   |                                                              |
+| Datum | Version | Zusammenfassung                                                                                                                             |
+| ----- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in _einem_ Satz, was Sie erreicht haben. |
+|       | ...     |                                                                                                                                             |
+|       | 1.0.0   |                                                                                                                                             |
 
 ## 1 Informieren
 
 ### 1.1 Ihr Projekt
 
-✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
+Wir erstellen eine Webanwendung, in der man Aufgaben und eine Einkaufsliste in der Familie verwalten und organisieren kann.
 
-✍️ Erklären Sie genauer in 50 bis 100 Wörtern, was genau Sie in diesem Projekt erreichen möchten, und was Sie dabei zu lernen hoffen.
+In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen unsere Fähigkeiten in der Frontend- und Backend-Entwicklung vertiefen und dabei eine Datenbank einsetzen. Außerdem möchten wir neue Technologien wie React.js und HTML Bootstrap kennenlernen, mit denen wir bisher noch nicht gearbeitet haben. Durch die Kombination dieser Elemente hoffen wir, unser Wissen zu erweitern und eine ansprechende Website zu gestalten. So können wir praktische Erfahrungen sammeln und unser Verständnis für moderne Webentwicklung verbessern.
 
 ### 1.2 Anforderungsanalyse
 
-| US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
-| ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-| ...  |                 |      |                                    |
+| US-№ | Verbindlichkeit | Typ        | Beschreibung                                                                                                                                           |
+| ---- | --------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1    | Muss            | Funktional | Als ein Benutzer möchte ich verschiedene Benutzer erstellen können, damit ich alle Familienmitglieder erfassen kann.                                   |
+| 2    | Muss            | Funktional | Als ein Benutzer möchte ich Aufgaben erstellen können, um die Aufgaben in der Familie zu verwalten                                                     |
+| 3    | Muss            | Funktional | Als ein Benutzer möchte ich Familienmitlgieder den verschiedenen Aufgaben zuweisen, damit jeder weiss, was zu erledigen ist.                           |
+| 4    | Muss            | Funktional | Als ein Benutzer möchte ich Aufgaben bearbeiten können, damit ich sie nicht zuerst löschen und dann neu erstellen muss.                                |
+| 5    | Muss            | Funktional | Als ein Benutzer möchte ich Aufgaben löschen können, damit die Anwendung übersichtlich bleibt und um Wegfallende Aufgaben zu entfernen.                |
+| 6    | Muss            | Funktional | Als ein Benutzer möchte ich die Möglichkeit haben Aufgaben als erledigt zu kennzeichnen, damit man einen Überblick hat, was noch erledigt werden muss. |
+| 7    | Muss            | Funktional |                                                                                                                                                        |
+| 8    | Muss            | Funktional |                                                                                                                                                        |
+| 9    | Muss            | Funktional |                                                                                                                                                        |
+| 10   | Muss            | Funktional |                                                                                                                                                        |
 
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
+✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: _Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️_.
 
 ### 1.3 Testfälle
 
@@ -47,7 +55,7 @@
 | 1.A  |       |           |              |               |
 | ...  |       |           |              |               |
 
-Total: 
+Total:
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
 
