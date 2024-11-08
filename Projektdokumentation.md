@@ -24,7 +24,7 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 | ---- | --------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 1    | Muss            | Funktional | Als ein Benutzer möchte ich verschiedene Benutzer erstellen können, damit ich alle Familienmitglieder erfassen kann.                                   |
 | 2    | Muss            | Funktional | Als ein Benutzer möchte ich Aufgaben erstellen können, um die Aufgaben in der Familie zu verwalten                                                     |
-| 3    | Muss            | Funktional | Als ein Benutzer möchte ich Familienmitlgieder den verschiedenen Aufgaben zuweisen, damit jeder weiss, was zu erledigen ist.                           |
+| 3    | Muss            | Funktional | Als ein Benutzer möchte ich Familienmitglieder den verschiedenen Aufgaben zuweisen, damit jeder weiss, was zu erledigen ist.                           |
 | 4    | Muss            | Funktional | Als ein Benutzer möchte ich Aufgaben bearbeiten können, damit ich sie nicht zuerst löschen und dann neu erstellen muss.                                |
 | 5    | Muss            | Funktional | Als ein Benutzer möchte ich Aufgaben löschen können, damit die Anwendung übersichtlich bleibt und um Wegfallende Aufgaben zu entfernen.                |
 | 6    | Muss            | Funktional | Als ein Benutzer möchte ich die Möglichkeit haben Aufgaben als erledigt zu kennzeichnen, damit man einen Überblick hat, was noch erledigt werden muss. |
@@ -49,7 +49,7 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 | 7.1  | Webseite gestartet          | Eikaufsliste erstellen auswählen             | Einkaufsliste wurde erstellt                   |
 | 8.1  | Webseite gestartet          | Element zu Eikaufsliste hinzufügen auswählen | Element wurde zu der Einkaufsliste hinzugefügt |
 | 9.1  | Webseite gestartet          | Element bearbeiten auswählen                 | Element kann bearbeitet werden                 |
-| 10.1 | Element aus List ausgewählt | Element löschen auswählen                       | Element wird aus List entfernt                 |
+| 10.1 | Element aus Liste ausgewählt | Element löschen auswählen                       | Element wird aus Liste entfernt                 |
 | 11.1 | Datum hinzufügen ausgewählt | Datum eingeben                               | Datum wird gespeichert                         |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
