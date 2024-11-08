@@ -28,9 +28,9 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 | 4    | Muss            | Funktional | Als ein Benutzer möchte ich Aufgaben bearbeiten können, damit ich sie nicht zuerst löschen und dann neu erstellen muss.                                |
 | 5    | Muss            | Funktional | Als ein Benutzer möchte ich Aufgaben löschen können, damit die Anwendung übersichtlich bleibt und um Wegfallende Aufgaben zu entfernen.                |
 | 6    | Muss            | Funktional | Als ein Benutzer möchte ich die Möglichkeit haben Aufgaben als erledigt zu kennzeichnen, damit man einen Überblick hat, was noch erledigt werden muss. |
-| 7    | Muss            | Funktional |                                                                                                                                                        |
-| 8    | Muss            | Funktional |                                                                                                                                                        |
-| 9    | Muss            | Funktional |                                                                                                                                                        |
+| 7    | Muss            | Funktional | Als ein Benutzer möchte ich eine Einkaufsliste erstellen können, damit jeder weiss was eingekauft werden muss.                                         |
+| 8    | Muss            | Funktional | Als ein Benutzer möchte ich Elemente aus der Einkaufsliste entfernen können, damit nicht unnötige Sachen eingekauft werden                             |
+| 9    | Muss            | Funktional | Als ein Benutzer möchte ich für jede Einkaufsliste ein Datum angeben können, damit jeder weiss, für wann der Einkauf geplant ist.                      |
 | 10   | Muss            | Funktional |                                                                                                                                                        |
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: _Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️_.
