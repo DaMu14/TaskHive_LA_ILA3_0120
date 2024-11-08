@@ -46,8 +46,8 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 | 4.1  | Aufgabe ausgewählt          | Aufgabe bearbeiten auswählen                 | Aufgabe kann bearbeitet werden                 |
 | 5.1  | Aufgabe ausgewählt          | Aufgabe löschen wählen                       | Aufgabe wurde gelöscht                         |
 | 6.1  | Aufgabe ausgewählt          | Aufgabe als erledigt kennzeichnen            | Aufgabe wurde als erledigt gekennzeichnet      |
-| 7.1  | Webseite gestartet          | Eikaufsliste erstellen auswählen             | Einkaufsliste wurde erstellt                   |
-| 8.1  | Webseite gestartet          | Element zu Eikaufsliste hinzufügen auswählen | Element wurde zu der Einkaufsliste hinzugefügt |
+| 7.1  | Webseite gestartet          | Einkaufsliste erstellen auswählen             | Einkaufsliste wurde erstellt                   |
+| 8.1  | Webseite gestartet          | Element zu Einkaufsliste hinzufügen auswählen | Element wurde zu der Einkaufsliste hinzugefügt |
 | 9.1  | Webseite gestartet          | Element bearbeiten auswählen                 | Element kann bearbeitet werden                 |
 | 10.1 | Element aus Liste ausgewählt | Element löschen auswählen                       | Element wird aus Liste entfernt                 |
 | 11.1 | Datum hinzufügen ausgewählt | Datum eingeben                               | Datum wird gespeichert                         |
