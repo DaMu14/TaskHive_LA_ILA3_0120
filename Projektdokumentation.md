@@ -38,17 +38,19 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 
 ### 1.3 Testfälle
 
-| TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
-| ---- | ------------ | ------- | ----------------- |
-| 1.1  |  Webseite gestartet   | Neuer Benutzer hinzufügen auswählen   |   neuer Benutzer wird hinzugefügt |
-| 2.1  | Webseite gestartet | neue Aufgabe erstellen auswählen | neue Aufgabe kann erstellt werden |
-| 3.1  | Aufgabe erstellt | Aufgabe Person zuweisen auswählen |  Aufgabe kann Person zugewiesen werden |
-| 4.1  |  Aufgabe ausgewählt  | Aufgabe bearbeiten auswählen  | Aufgabe kann bearbeitet werden |
-| 5.1  | Aufgabe ausgewählt | Aufgabe löschen wählen  | Aufgabe wurde gelöscht |
-| 6.1  | Aufgabe ausgewählt  | Aufgabe als erledigt kennzeichnen | Aufgabe wurde als erledigt gekennzeichnet |
-| 7.1  | Webseite gestartet |     | Einkaufsliste wurde erstellt |
-| 8.1  | Element aus List ausgewählt | Element löschen wählen | Element wird aus List entfernt |
-| 9.1  | Datum hinzufügen ausgewählt | Datum eingeben  | Datum wird gespeichert |
+| TC-№ | Ausgangslage                | Eingabe                                      | Erwartete Ausgabe                              |
+| ---- | --------------------------- | -------------------------------------------- | ---------------------------------------------- |
+| 1.1  | Webseite gestartet          | Neuer Benutzer hinzufügen auswählen          | neuer Benutzer wird hinzugefügt                |
+| 2.1  | Webseite gestartet          | neue Aufgabe erstellen auswählen             | neue Aufgabe kann erstellt werden              |
+| 3.1  | Aufgabe erstellt            | Aufgabe Person zuweisen auswählen            | Aufgabe kann Person zugewiesen werden          |
+| 4.1  | Aufgabe ausgewählt          | Aufgabe bearbeiten auswählen                 | Aufgabe kann bearbeitet werden                 |
+| 5.1  | Aufgabe ausgewählt          | Aufgabe löschen wählen                       | Aufgabe wurde gelöscht                         |
+| 6.1  | Aufgabe ausgewählt          | Aufgabe als erledigt kennzeichnen            | Aufgabe wurde als erledigt gekennzeichnet      |
+| 7.1  | Webseite gestartet          | Eikaufsliste erstellen auswählen             | Einkaufsliste wurde erstellt                   |
+| 8.1  | Webseite gestartet          | Element zu Eikaufsliste hinzufügen auswählen | Element wurde zu der Einkaufsliste hinzugefügt |
+| 9.1  | Webseite gestartet          | Element bearbeiten auswählen                 | Element kann bearbeitet werden                 |
+| 10.1 | Element aus List ausgewählt | Element löschen wählen                       | Element wird aus List entfernt                 |
+| 11.1 | Datum hinzufügen ausgewählt | Datum eingeben                               | Datum wird gespeichert                         |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
