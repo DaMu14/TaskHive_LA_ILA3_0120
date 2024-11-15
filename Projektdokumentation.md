@@ -37,27 +37,30 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 | 13   | Muss            | Randbedingung | Als ein Entwickler möchte ich, dass das Frontend mit React.js umgesetzt wird, um eine neue Technologie kennen zu lernen.                                         |
 | 14   | Muss            | Randbedingung | Als ein Entwickler möchte ich, dass das Backend mindestens mit .Net Version 6 oder höher umgesetzt wird, um zu gewährleisten, dass ein Framework verwendet wird. |
 
-
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: _Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️_.
 
 ### 1.3 Testfälle
 
-| TC-№ | Ausgangslage                 | Eingabe                                                                            | Erwartete Ausgabe                                                                 |
-| ---- | ---------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 1.1  | Webseite gestartet           | Neuer Benutzer hinzufügen auswählen                                                | neuer Benutzer wird hinzugefügt                                                   |
-| 2.1  | Webseite gestartet           | neue Aufgabe erstellen auswählen, Eingabe des Namens und Eingabe der Aufgabe       | neue Aufgabe wird gespeichert                                                     |
-| 2.2  | Webseite gestartet           | neue Aufgabe erstellen auswählen, Keine Eingabe des Namens und Eingabe der Aufgabe | Ausgabe von "Sie müssen Einen Namen eingeben", "Sie müssen eine Aufgabe eingeben" |
-| 3.1  | Aufgabe erstellt             | Aufgabe Person zuweisen auswählen                                                  | Aufgabe wird Person zugewiesen                                                    |
-| 4.1  | Aufgabe ausgewählt           | Aufgabe bearbeiten auswählen                                                       | Aufgabe kann bearbeitet werden                                                    |
-| 5.1  | Aufgabe ausgewählt           | Aufgabe löschen wählen                                                             | Aufgabe wurde gelöscht                                                            |
-| 6.1  | Aufgabe ausgewählt           | Aufgabe als erledigt kennzeichnen                                                  | Aufgabe wurde als erledigt gekennzeichnet                                         |
-| 7.1  | Webseite gestartet           | Einkaufsliste erstellen auswählen, Namen eingeben                                  | Einkaufsliste wurde erstellt                                                      |
-| 7.2  | Webseite gestartet           | Einkaufsliste erstellen auswählen, Kein Namen eingeben                             | Ausgabe von "Sie müssen der Einkaufsliste einen Namen geben"                      |
-| 8.1  | Webseite gestartet           | Element zu Einkaufsliste hinzufügen auswählen, Namen von dem Element eingeben      | Element wurde zu der Einkaufsliste hinzugefügt                                    |
-| 8.2  | Webseite gestartet           | Element zu Einkaufsliste hinzufügen auswählen, Kein Namen von dem Element eingeben | Ausgabe von "Sie müssen dem Element einen Namen geben"                            |
-| 9.1  | Webseite gestartet           | Element bearbeiten auswählen                                                       | Element kann bearbeitet werden                                                    |
-| 10.1 | Element aus Liste ausgewählt | Element löschen auswählen                                                          | Element wurde aus der Liste entfernt                                              |
-| 11.1 | Datum hinzufügen ausgewählt  | Einkaufsliste erstellen auswählen, Namen eingeben, Datum eingeben                  | Einkaufsliste wurde mit Datum erstellt                                            |
+| TC-№ | Ausgangslage                                | Eingabe                                                                            | Erwartete Ausgabe                                                                 |
+| ---- | ------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| 1.1  | Webseite gestartet                          | Neuer Benutzer hinzufügen auswählen                                                | neuer Benutzer wird hinzugefügt                                                   |
+| 2.1  | Webseite gestartet                          | neue Aufgabe erstellen auswählen, Eingabe des Namens und Eingabe der Aufgabe       | neue Aufgabe wird gespeichert                                                     |
+| 2.2  | Webseite gestartet                          | neue Aufgabe erstellen auswählen, Keine Eingabe des Namens und Eingabe der Aufgabe | Ausgabe von "Sie müssen Einen Namen eingeben", "Sie müssen eine Aufgabe eingeben" |
+| 3.1  | Aufgabe erstellt                            | Aufgabe Person zuweisen auswählen                                                  | Aufgabe wird Person zugewiesen                                                    |
+| 4.1  | Aufgabe ausgewählt                          | Aufgabe bearbeiten auswählen                                                       | Aufgabe kann bearbeitet werden                                                    |
+| 5.1  | Aufgabe ausgewählt                          | Aufgabe löschen wählen                                                             | Aufgabe wurde gelöscht                                                            |
+| 6.1  | Aufgabe ausgewählt                          | Aufgabe als erledigt kennzeichnen                                                  | Aufgabe wurde als erledigt gekennzeichnet                                         |
+| 7.1  | Webseite gestartet                          | Einkaufsliste erstellen auswählen, Namen eingeben                                  | Einkaufsliste wurde erstellt                                                      |
+| 7.2  | Webseite gestartet                          | Einkaufsliste erstellen auswählen, Kein Namen eingeben                             | Ausgabe von "Sie müssen der Einkaufsliste einen Namen geben"                      |
+| 8.1  | Webseite gestartet                          | Element zu Einkaufsliste hinzufügen auswählen, Namen von dem Element eingeben      | Element wurde zu der Einkaufsliste hinzugefügt                                    |
+| 8.2  | Webseite gestartet                          | Element zu Einkaufsliste hinzufügen auswählen, Kein Namen von dem Element eingeben | Ausgabe von "Sie müssen dem Element einen Namen geben"                            |
+| 9.1  | Webseite gestartet                          | Element bearbeiten auswählen                                                       | Element kann bearbeitet werden                                                    |
+| 10.1 | Element aus Liste ausgewählt                | Element löschen auswählen                                                          | Element wurde aus der Liste entfernt                                              |
+| 11.1 | Datum hinzufügen ausgewählt                 | Einkaufsliste erstellen auswählen, Namen eingeben, Datum eingeben                  | Einkaufsliste wurde mit Datum erstellt                                            |
+| 12.1 | Webseite gestartet                          | Ladezeit messen                                                                    | Die Startseite wird innerhalb von 2 Sekunden geladen                              |
+| 12.2 | Webseite gestartet                          | Navigation zwischen Seiten testen (SPA Verhalten)                                  | Nur Teile des DOM werden aktualisiert, kein vollständiges Neuladen                |
+| 12.3 | Webseite in verschiedenen Browsern geöffnet | SPA-Funktionalität testen                                                          | Die Anwendung funktioniert einwandfrei in Chrome, Firefox und Edge                |
+| 14.1 | Backend gestartet                           | Überprüfung der .NET-Version                                                       | .NET-Version ist 6 oder höher                                                     |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
@@ -67,19 +70,19 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 
 ## 2 Planen
 
-| AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
-| ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           | Multiuser Anwendung       |               |
-| 2.A  |       |           | Aufgaben verwalten können   |               |
-| 3.A  |       |           | Aufgaben zuweisen    |         |
-| 4.A  |       |           | Aufgaben bearbeiten können |               |
-| 5.A  |       |           | Aufgaben löschen können |               |
-| 6.A  |       |           | Aufgaben als erledigt kennzeichnen | |
-| 7.A  |       |           | Liste erstellen können   |        |
-| 8.A  |       |           | Elemente hinzufügen können |        |
-| 9.A  |       |           | Elemente bearbeiten können |        |
-| 10.A |       |           | Elemente löschen können |        |
-| 11.A |       |           | Datum hinzufügen können |        |
+| AP-№ | Frist | Zuständig | Beschreibung                       | geplante Zeit |
+| ---- | ----- | --------- | ---------------------------------- | ------------- |
+| 1.A  |       |           | Multiuser Anwendung                |               |
+| 2.A  |       |           | Aufgaben verwalten können          |               |
+| 3.A  |       |           | Aufgaben zuweisen                  |               |
+| 4.A  |       |           | Aufgaben bearbeiten können         |               |
+| 5.A  |       |           | Aufgaben löschen können            |               |
+| 6.A  |       |           | Aufgaben als erledigt kennzeichnen |               |
+| 7.A  |       |           | Liste erstellen können             |               |
+| 8.A  |       |           | Elemente hinzufügen können         |               |
+| 9.A  |       |           | Elemente bearbeiten können         |               |
+| 10.A |       |           | Elemente löschen können            |               |
+| 11.A |       |           | Datum hinzufügen können            |               |
 
 Total:
 
