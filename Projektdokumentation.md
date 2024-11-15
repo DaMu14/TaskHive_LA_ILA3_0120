@@ -63,7 +63,7 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 
 ### 1.4 Diagramme
 
-✍️Fügen Sie hier ein Use Case-Diagramm mit mindestens 3 Anwendungsfällen ein; und eine Skizze davon, wie Ihre Netzseite aussehen sollte.
+![Use case diagram](https://github.com/user-attachments/assets/8ced3fa4-14e5-4e2a-94c5-9c6c82542922)
 
 ## 2 Planen
 
