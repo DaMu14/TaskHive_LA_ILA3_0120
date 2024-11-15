@@ -6,9 +6,9 @@
 
 | Datum | Version | Zusammenfassung                                                                                                                             |
 | ----- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in _einem_ Satz, was Sie erreicht haben. |
-|       | ...     |                                                                                                                                             |
-|       | 1.0.0   |                                                                                                                                             |
+| 08.11.2024      | 0.0.1   | Heute haben wir den Projektantrag abgegeben und an der Informierenphase gearbeitet und die Anforderungsanalsyse, sowie Testfälle erstellt. Wir haben angefangen ein Use Case Diagram zu erstellen. |
+| 15.11.2024      | 0.0.2   |  |
+| 22.11.2024      | 1.0.0   |  |
 
 ## 1 Informieren
 
