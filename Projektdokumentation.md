@@ -4,11 +4,11 @@
 
 ✍️ Ihr Gruppenname und Ihre Nachnamen
 
-| Datum | Version | Zusammenfassung                                                                                                                             |
-| ----- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| 08.11.2024      | 0.0.1   | Heute haben wir den Projektantrag abgegeben und an der Informierenphase gearbeitet und die Anforderungsanalsyse, sowie Testfälle erstellt. Wir haben angefangen ein Use Case Diagram zu erstellen. |
-| 15.11.2024      | 0.0.2   |  |
-| 22.11.2024      | 1.0.0   |  |
+| Datum      | Version | Zusammenfassung                                                                                                                                                                                    |
+| ---------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 08.11.2024 | 0.0.1   | Heute haben wir den Projektantrag abgegeben und an der Informierenphase gearbeitet und die Anforderungsanalsyse, sowie Testfälle erstellt. Wir haben angefangen ein Use Case Diagram zu erstellen. |
+| 15.11.2024 | 0.0.2   |                                                                                                                                                                                                    |
+| 22.11.2024 | 1.0.0   |                                                                                                                                                                                                    |
 
 ## 1 Informieren
 
@@ -20,38 +20,44 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 
 ### 1.2 Anforderungsanalyse
 
-| US-№ | Verbindlichkeit | Typ        | Beschreibung                                                                                                                                           |
-| ---- | --------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1    | Muss            | Funktional | Als ein Benutzer möchte ich verschiedene Benutzer erstellen können, damit ich alle Familienmitglieder erfassen kann.                                   |
-| 2    | Muss            | Funktional | Als ein Benutzer möchte ich Aufgaben erstellen können, um die Aufgaben in der Familie zu verwalten                                                     |
-| 3    | Muss            | Funktional | Als ein Benutzer möchte ich Familienmitglieder den verschiedenen Aufgaben zuweisen, damit jeder weiss, was zu erledigen ist.                           |
-| 4    | Muss            | Funktional | Als ein Benutzer möchte ich Aufgaben bearbeiten können, damit ich sie nicht zuerst löschen und dann neu erstellen muss.                                |
-| 5    | Muss            | Funktional | Als ein Benutzer möchte ich Aufgaben löschen können, damit die Anwendung übersichtlich bleibt und um Wegfallende Aufgaben zu entfernen.                |
-| 6    | Muss            | Funktional | Als ein Benutzer möchte ich die Möglichkeit haben Aufgaben als erledigt zu kennzeichnen, damit man einen Überblick hat, was noch erledigt werden muss. |
-| 7    | Muss            | Funktional | Als ein Benutzer möchte ich eine Einkaufsliste erstellen können, damit jeder weiss was eingekauft werden muss.                                         |
-| 8    | Muss            | Funktional | Als ein Benutzer möchte ich Elemente zu der Einkaufsliste hinzufügen können, damit jeder weiss, was eingekauft werden muss.                            |
-| 9    | Muss            | Funktional | Als ein Benutzer möchte ich Elemente bearbeiten können, damit ich sie nicht zuerst löschen und dann neu erstellen muss.                                |
-| 10   | Muss            | Funktional | Als ein Benutzer möchte ich Elemente aus der Einkaufsliste entfernen können, damit keine unnötige Sachen eingekauft werden                             |
-| 11   | Muss            | Funktional | Als ein Benutzer möchte ich für jede Einkaufsliste ein Datum angeben können, damit jeder weiss, für wann der Einkauf geplant ist.                      |
+| US-№ | Verbindlichkeit | Typ           | Beschreibung                                                                                                                                                     |
+| ---- | --------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | Muss            | Funktional    | Als ein Benutzer möchte ich verschiedene Benutzer erstellen können, damit ich alle Familienmitglieder erfassen kann.                                             |
+| 2    | Muss            | Funktional    | Als ein Benutzer möchte ich Aufgaben erstellen können, um die Aufgaben in der Familie zu verwalten                                                               |
+| 3    | Muss            | Funktional    | Als ein Benutzer möchte ich Familienmitglieder den verschiedenen Aufgaben zuweisen, damit jeder weiss, was zu erledigen ist.                                     |
+| 4    | Muss            | Funktional    | Als ein Benutzer möchte ich Aufgaben bearbeiten können, damit ich sie nicht zuerst löschen und dann neu erstellen muss.                                          |
+| 5    | Muss            | Funktional    | Als ein Benutzer möchte ich Aufgaben löschen können, damit die Anwendung übersichtlich bleibt und um Wegfallende Aufgaben zu entfernen.                          |
+| 6    | Muss            | Funktional    | Als ein Benutzer möchte ich die Möglichkeit haben Aufgaben als erledigt zu kennzeichnen, damit man einen Überblick hat, was noch erledigt werden muss.           |
+| 7    | Muss            | Funktional    | Als ein Benutzer möchte ich eine Einkaufsliste erstellen können, damit jeder weiss was eingekauft werden muss.                                                   |
+| 8    | Muss            | Funktional    | Als ein Benutzer möchte ich Elemente zu der Einkaufsliste hinzufügen können, damit jeder weiss, was eingekauft werden muss.                                      |
+| 9    | Muss            | Funktional    | Als ein Benutzer möchte ich Elemente bearbeiten können, damit ich sie nicht zuerst löschen und dann neu erstellen muss.                                          |
+| 10   | Muss            | Funktional    | Als ein Benutzer möchte ich Elemente aus der Einkaufsliste entfernen können, damit keine unnötige Sachen eingekauft werden                                       |
+| 11   | Muss            | Funktional    | Als ein Benutzer möchte ich für jede Einkaufsliste ein Datum angeben können, damit jeder weiss, für wann der Einkauf geplant ist.                                |
+| 12   | Muss            | Qualität      | Als ein Benutzer möchte ich, dass das Frontend als eine Singe Page Application umgesetzt ist, um schnelle Ladezeiten zu gewährleisten.                           |
+| 13   | Muss            | Randbedingung | Als ein Entwickler möchte ich, dass das Frontend mit React.js umgesetzt wird, um eine neue Technologie kennen zu lernen.                                         |
+| 14   | Muss            | Randbedingung | Als ein Entwickler möchte ich, dass das Backend mindestens mit .Net Version 6 oder höher umgesetzt wird, um zu gewährleisten, dass ein Framework verwendet wird. |
 
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: _Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️_.
 
 ### 1.3 Testfälle
 
-| TC-№ | Ausgangslage                | Eingabe                                      | Erwartete Ausgabe                              |
-| ---- | --------------------------- | -------------------------------------------- | ---------------------------------------------- |
-| 1.1  | Webseite gestartet          | Neuer Benutzer hinzufügen auswählen          | neuer Benutzer wird hinzugefügt                |
-| 2.1  | Webseite gestartet          | neue Aufgabe erstellen auswählen             | neue Aufgabe kann erstellt werden              |
-| 3.1  | Aufgabe erstellt            | Aufgabe Person zuweisen auswählen            | Aufgabe kann Person zugewiesen werden          |
-| 4.1  | Aufgabe ausgewählt          | Aufgabe bearbeiten auswählen                 | Aufgabe kann bearbeitet werden                 |
-| 5.1  | Aufgabe ausgewählt          | Aufgabe löschen wählen                       | Aufgabe wurde gelöscht                         |
-| 6.1  | Aufgabe ausgewählt          | Aufgabe als erledigt kennzeichnen            | Aufgabe wurde als erledigt gekennzeichnet      |
-| 7.1  | Webseite gestartet          | Einkaufsliste erstellen auswählen             | Einkaufsliste wurde erstellt                   |
-| 8.1  | Webseite gestartet          | Element zu Einkaufsliste hinzufügen auswählen | Element wurde zu der Einkaufsliste hinzugefügt |
-| 9.1  | Webseite gestartet          | Element bearbeiten auswählen                 | Element kann bearbeitet werden                 |
-| 10.1 | Element aus Liste ausgewählt | Element löschen auswählen                       | Element wird aus Liste entfernt                 |
-| 11.1 | Datum hinzufügen ausgewählt | Datum eingeben                               | Datum wird gespeichert                         |
+| TC-№ | Ausgangslage                 | Eingabe                                                                            | Erwartete Ausgabe                                                                 |
+| ---- | ---------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| 1.1  | Webseite gestartet           | Neuer Benutzer hinzufügen auswählen                                                | neuer Benutzer wird hinzugefügt                                                   |
+| 2.1  | Webseite gestartet           | neue Aufgabe erstellen auswählen, Eingabe des Namens und Eingabe der Aufgabe       | neue Aufgabe wird gespeichert                                                     |
+| 2.2  | Webseite gestartet           | neue Aufgabe erstellen auswählen, Keine Eingabe des Namens und Eingabe der Aufgabe | Ausgabe von "Sie müssen Einen Namen eingeben", "Sie müssen eine Aufgabe eingeben" |
+| 3.1  | Aufgabe erstellt             | Aufgabe Person zuweisen auswählen                                                  | Aufgabe wird Person zugewiesen                                                    |
+| 4.1  | Aufgabe ausgewählt           | Aufgabe bearbeiten auswählen                                                       | Aufgabe kann bearbeitet werden                                                    |
+| 5.1  | Aufgabe ausgewählt           | Aufgabe löschen wählen                                                             | Aufgabe wurde gelöscht                                                            |
+| 6.1  | Aufgabe ausgewählt           | Aufgabe als erledigt kennzeichnen                                                  | Aufgabe wurde als erledigt gekennzeichnet                                         |
+| 7.1  | Webseite gestartet           | Einkaufsliste erstellen auswählen, Namen eingeben                                  | Einkaufsliste wurde erstellt                                                      |
+| 7.2  | Webseite gestartet           | Einkaufsliste erstellen auswählen, Kein Namen eingeben                             | Ausgabe von "Sie müssen der Einkaufsliste einen Namen geben"                      |
+| 8.1  | Webseite gestartet           | Element zu Einkaufsliste hinzufügen auswählen, Namen von dem Element eingeben      | Element wurde zu der Einkaufsliste hinzugefügt                                    |
+| 8.2  | Webseite gestartet           | Element zu Einkaufsliste hinzufügen auswählen, Kein Namen von dem Element eingeben | Ausgabe von "Sie müssen dem Element einen Namen geben"                            |
+| 9.1  | Webseite gestartet           | Element bearbeiten auswählen                                                       | Element kann bearbeitet werden                                                    |
+| 10.1 | Element aus Liste ausgewählt | Element löschen auswählen                                                          | Element wurde aus der Liste entfernt                                              |
+| 11.1 | Datum hinzufügen ausgewählt  | Einkaufsliste erstellen auswählen, Namen eingeben, Datum eingeben                  | Einkaufsliste wurde mit Datum erstellt                                            |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
