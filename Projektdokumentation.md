@@ -34,6 +34,7 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 | 10   | Muss            | Funktional | Als ein Benutzer möchte ich Elemente aus der Einkaufsliste entfernen können, damit keine unnötige Sachen eingekauft werden                             |
 | 11   | Muss            | Funktional | Als ein Benutzer möchte ich für jede Einkaufsliste ein Datum angeben können, damit jeder weiss, für wann der Einkauf geplant ist.                      |
 
+
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: _Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️_.
 
 ### 1.3 Testfälle
@@ -62,8 +63,17 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           |              |               |
-| ...  |       |           |              |               |
+| 1.A  |       |           | Multiuser Anwendung       |               |
+| 2.A  |       |           | Aufgaben verwalten können   |               |
+| 3.A  |       |           | Aufgaben zuweisen    |         |
+| 4.A  |       |           | Aufgaben bearbeiten können |               |
+| 5.A  |       |           | Aufgaben löschen können |               |
+| 6.A  |       |           | Aufgaben als erledigt kennzeichnen | |
+| 7.A  |       |           | Liste erstellen können   |        |
+| 8.A  |       |           | Elemente hinzufügen können |        |
+| 9.A  |       |           | Elemente bearbeiten können |        |
+| 10.A |       |           | Elemente löschen können |        |
+| 11.A |       |           | Datum hinzufügen können |        |
 
 Total:
 
