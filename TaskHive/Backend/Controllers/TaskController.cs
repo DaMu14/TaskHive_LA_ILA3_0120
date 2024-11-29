@@ -7,16 +7,15 @@ namespace Backend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TestController : ControllerBase
+    public class TaskController : ControllerBase
     {
         private readonly MongoDbService _mongoDbService;
 
-        public TestController(MongoDbService mongoDbService)
+        public TaskController(MongoDbService mongoDbService)
         {
             _mongoDbService = mongoDbService;
         }
 
-        // GET: api/test
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -24,7 +23,6 @@ namespace Backend.Controllers
             return Ok(items);
         }
 
-        // GET: api/test/{id}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
         {
@@ -39,7 +37,6 @@ namespace Backend.Controllers
         }
 
 
-        // POST: api/test
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateItemRequest request)
         {
@@ -64,9 +61,6 @@ namespace Backend.Controllers
             return CreatedAtAction(nameof(GetById), new { id = newItem.Id }, newItem);
         }
 
-
-
-        // PUT: api/test/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, [FromBody] UpdateItemRequest request)
         {
@@ -83,9 +77,7 @@ namespace Backend.Controllers
 
             return NoContent(); // Erfolgreiche Bearbeitung ohne Rückgabe
         }
-
-
-        // DELETE: api/test/{id}
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id) // Ändere den Typ von int zu string
         {

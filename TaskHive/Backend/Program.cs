@@ -36,9 +36,7 @@ namespace Backend
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
-            app.UseHttpsRedirection();
-
+            
             app.UseCors("AllowAll");
 
             app.UseAuthorization();
