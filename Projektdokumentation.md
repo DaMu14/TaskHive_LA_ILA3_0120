@@ -72,18 +72,18 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  | 29.11.2024       | Robin Sacher          | Multiuser Anwendung       |               |
-| 2.A  | 13.12.2024      | Robin Sacher         | Aufgaben verwalten können   |               |
-| 3.A  | 13.12.2024      | Robin Sacher          | Aufgaben zuweisen    |         |
-| 4.A  | 06.12.2024      | Damian Müller          | Aufgaben bearbeiten können |               |
-| 5.A  | 06.12.2024      | Damian Müller          | Aufgaben löschen können |               |
-| 6.A  | 06.12.2024      |           | Aufgaben als erledigt kennzeichnen | |
-| 7.A  | 06.12.2024      | Julian Hitz         | Liste erstellen können   |        |
-| 8.A  | 13.12.2024      | Damian Müller          | Elemente hinzufügen können |        |
-| 9.A  | 13.12.2024      | Damian Müller          | Elemente bearbeiten können |        |
-| 10.A | 13.12.2024      | Damian Müller          | Elemente löschen können |        |
-| 11.A | 13.12.2024      | Julian Hitz          | Datum hinzufügen können |        |
-|      | 22.11.2024      | Julian Hitz          | Frontend Darstellung     |       |
+| 1.A  | 29.11.2024       | Robin Sacher          | Multiuser Anwendung       | 60 min            |
+| 2.A  | 13.12.2024      | Robin Sacher         | Aufgaben verwalten können   | 60 min              |
+| 3.A  | 13.12.2024      | Robin Sacher          | Aufgaben zuweisen    | 45 min        | 
+| 4.A  | 06.12.2024      | Damian Müller          | Aufgaben bearbeiten können |  45 min             |
+| 5.A  | 06.12.2024      | Damian Müller          | Aufgaben löschen können | 30 min              |
+| 6.A  | 06.12.2024      | Julian Hitz          | Aufgaben als erledigt kennzeichnen | 30 min | 
+| 7.A  | 06.12.2024      | Julian Hitz         | Liste erstellen können   | 45 min       |
+| 8.A  | 13.12.2024      | Damian Müller          | Elemente hinzufügen können | 30 min       |
+| 9.A  | 13.12.2024      | Damian Müller          | Elemente bearbeiten können | 30 min       |
+| 10.A | 13.12.2024      | Damian Müller          | Elemente löschen können | 30 min       |
+| 11.A | 13.12.2024      | Julian Hitz          | Datum hinzufügen können | 45 min       |
+|      | 22.11.2024      | Julian Hitz          | Frontend Darstellung     | 30 min      |
 
 Total:
 
