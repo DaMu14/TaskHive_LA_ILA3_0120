@@ -28,5 +28,17 @@ namespace Backend.Repositories
         {
             return await _usersCollection.Find(u => u.Username == username).FirstOrDefaultAsync();
         }
+
+        public async Task<bool> DeleteUserByIdAsync(string userId)
+        {
+            var result = await _usersCollection.DeleteOneAsync(u => u.Id == userId);
+            return result.DeletedCount > 0;
+        }
+
+        public async Task<bool> DeleteUserByUsernameAsync(string username)
+        {
+            var result = await _usersCollection.DeleteOneAsync(u => u.Username == username);
+            return result.DeletedCount > 0;
+        }
     }
 }
