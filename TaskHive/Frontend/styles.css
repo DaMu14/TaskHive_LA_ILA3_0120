@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+  }
+  
+  nav {
+    text-align: center;
+    margin: 1em 0;
+  }
+  
+  nav button {
+    padding: 0.7em 1.5em;
+    margin: 0 5px;
+    border: none;
+    background-color: #fff;
+    color: #4CAF50;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  nav button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  main {
+    padding: 1.5em;
+  }
+  
+  .page {
+    display: none;
+  }
+  
+  .page.active {
+    display: block;
+  }
+  
+  form {
+    margin-bottom: 1.5em;
+  }
+  
+  form input,
+  form select,
+  form button {
+    padding: 0.7em;
+    margin: 0.5em 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 0.5em 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li span {
+    flex-grow: 1;
+  }
+  
+  button.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button.delete:hover {
+    background-color: darkred;
+  }
+  
+  .shopping-items {
+    margin-top: 1em;
+  }
+  
+  .shopping-items input {
+    width: calc(100% - 60px);
+    margin-bottom: 0.5em;
+  }
+  
