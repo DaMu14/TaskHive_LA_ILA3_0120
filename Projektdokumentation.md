@@ -99,8 +99,18 @@ Total:
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
-| ...  |       |           |               |                   |
+| 1.A  | 29.11.2024  | Robin Sacher   | 60 min        |                   |
+| 2.A | 13.12.2024  | Robin Sacher   |    60 min    |       |
+| 3.A  | 13.12.2024  | Robin Sacher   |  45 min   |     |
+| 4.A  | 6.12.2024   | Damian Müller  |   45 min     |      |
+| 5.A  |  6.12.2024  | Damian Müller   | 30 min   |        |
+| 6.A  |  6.12.2024   | Julian Hitz   | 30 min    |     |
+| 7.A  |  6.12.2024  | Julian Hitz    | 45 min   |      |
+| 8.A  | 13.12.2024   | Damian Müller  | 30 min   |      |
+| 9.A  | 13.12.2024   | Damian Müller  | 30 min   |       |
+| 10.A | 13.12.2024   | Damian Müller  | 30 min    |      |
+| 11.A | 13.12.2024   | Julian Hitz    | 45 min   |       |
+|      | 22.11.2024   | Julian Hitz    | 30 min   |       |
 
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
 
