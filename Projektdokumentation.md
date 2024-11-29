@@ -99,9 +99,9 @@ Total:
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  | 29.11.2024  | Robin Sacher   | 60 min        |                   |
-| 2.A | 13.12.2024  | Robin Sacher   |    60 min    |       |
-| 3.A  | 13.12.2024  | Robin Sacher   |  45 min   |     |
+| 1.A  | 29.11.2024  | Robin Sacher   | 60 min        |   50 min                |
+| 2.A | 13.12.2024  | Robin Sacher   |    60 min    |     180 min  |
+| 3.A  | 13.12.2024  | Robin Sacher   |  45 min   |     | 
 | 4.A  | 6.12.2024   | Damian Müller  |   45 min     |      |
 | 5.A  |  6.12.2024  | Damian Müller   | 30 min   |        |
 | 6.A  |  6.12.2024   | Julian Hitz   | 30 min    |     |
