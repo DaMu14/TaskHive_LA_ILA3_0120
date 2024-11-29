@@ -1,4 +1,5 @@
 using Backend.Models;
+using Backend.Repositories;
 using Backend.Services;
 
 namespace Backend
@@ -9,11 +10,26 @@ namespace Backend
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // CORS-Politik für Geräte aus dem gleichen Netzwerk
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAll",
+                options.AddPolicy("AllowLocalNetwork",
                     policy => policy
-                        .AllowAnyOrigin()
+                        .SetIsOriginAllowed(origin =>
+                        {
+                            // Erlaubt nur Anfragen aus dem lokalen Subnetz (z. B. 192.168.x.x)
+                            if (string.IsNullOrEmpty(origin)) return false;
+
+                            try
+                            {
+                                var uri = new Uri(origin);
+                                return uri.Host.StartsWith("192.168."); // Prüft, ob die Anfrage aus dem Subnetz stammt
+                            }
+                            catch
+                            {
+                                return false; // Wenn Parsing fehlschlägt, verweigern
+                            }
+                        })
                         .AllowAnyMethod()
                         .AllowAnyHeader());
             });
@@ -21,10 +37,10 @@ namespace Backend
             // Konfiguration für die Datenbankeinstellungen
             builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("DatabaseSettings"));
             builder.Services.AddSingleton<MongoDbService>();
+            builder.Services.AddSingleton<UserRepository>();
 
             // Add services to the container.
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
@@ -36,13 +52,15 @@ namespace Backend
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-            
-            app.UseCors("AllowAll");
+
+            // Aktivieren der CORS-Politik
+            app.UseCors("AllowLocalNetwork");
 
             app.UseAuthorization();
 
             app.MapControllers();
 
+            // Lauschen auf allen Schnittstellen (für das lokale Netzwerk notwendig)
             app.Run();
         }
     }

@@ -1,7 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using Backend.Models;
-using Microsoft.Extensions.Options;
 
 namespace Backend.Services
 {
@@ -9,26 +8,28 @@ namespace Backend.Services
     {
         private readonly IMongoCollection<Item> _itemsCollection;
 
-        public MongoDbService(IOptions<DatabaseSettings> settings)
+        public MongoDbService(IConfiguration configuration)
         {
-            var client = new MongoClient(settings.Value.ConnectionString);
-            var database = client.GetDatabase(settings.Value.DatabaseName);
-            _itemsCollection = database.GetCollection<Item>(settings.Value.CollectionName);
+            // Verbindung zur MongoDB herstellen
+            var client = new MongoClient(configuration.GetSection("DatabaseSettings:ConnectionString").Value);
+            var database = client.GetDatabase(configuration.GetSection("DatabaseSettings:DatabaseName").Value);
+
+            // Tasks-Collection aus der Konfiguration laden
+            _itemsCollection = database.GetCollection<Item>(
+                configuration.GetSection("DatabaseSettings:Collections:Tasks").Value
+            );
         }
 
-        // Alle Items abrufen
         public async Task<List<Item>> GetAllAsync()
         {
             return await _itemsCollection.Find(_ => true).ToListAsync();
         }
 
-        // Ein einzelnes Item anhand der ID abrufen
         public async Task<Item> GetAsync(string id)
         {
             return await _itemsCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
         }
 
-        // Ein neues Item erstellen
         public async Task CreateAsync(Item newItem)
         {
             await _itemsCollection.InsertOneAsync(newItem);
@@ -36,22 +37,13 @@ namespace Backend.Services
 
         public async Task UpdateAsync(string id, Item updatedItem)
         {
-            if (!ObjectId.TryParse(id, out var objectId))
-            {
-                throw new FormatException("Die angegebene ID ist kein gültiges ObjectId.");
-            }
-
             await _itemsCollection.ReplaceOneAsync(item => item.Id == id, updatedItem);
         }
 
         public async Task DeleteAsync(string id)
         {
-            if (!ObjectId.TryParse(id, out var objectId))
-            {
-                throw new FormatException("Die angegebene ID ist kein gültiges ObjectId.");
-            }
-
             await _itemsCollection.DeleteOneAsync(item => item.Id == id);
         }
     }
 }
+    
