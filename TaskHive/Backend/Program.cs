@@ -10,28 +10,15 @@ namespace Backend
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // CORS-Politik für Geräte aus dem gleichen Netzwerk
+            // CORS-Politik, die Anfragen von überall erlaubt
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowLocalNetwork",
+                options.AddPolicy("AllowAll",
                     policy => policy
-                        .SetIsOriginAllowed(origin =>
-                        {
-                            // Erlaubt nur Anfragen aus dem lokalen Subnetz (z. B. 192.168.x.x)
-                            if (string.IsNullOrEmpty(origin)) return false;
-
-                            try
-                            {
-                                var uri = new Uri(origin);
-                                return uri.Host.StartsWith("192.168."); // Prüft, ob die Anfrage aus dem Subnetz stammt
-                            }
-                            catch
-                            {
-                                return false; // Wenn Parsing fehlschlägt, verweigern
-                            }
-                        })
-                        .AllowAnyMethod()
-                        .AllowAnyHeader());
+                        .AllowAnyOrigin()  // Erlaubt Anfragen von allen Ursprüngen
+                        .AllowAnyMethod()  // Erlaubt alle HTTP-Methoden (GET, POST, etc.)
+                        .AllowAnyHeader()  // Erlaubt alle Header
+                );
             });
 
             // Konfiguration für die Datenbankeinstellungen
@@ -54,13 +41,13 @@ namespace Backend
             }
 
             // Aktivieren der CORS-Politik
-            app.UseCors("AllowLocalNetwork");
+            app.UseCors("AllowAll");
 
             app.UseAuthorization();
 
             app.MapControllers();
 
-            // Lauschen auf allen Schnittstellen (für das lokale Netzwerk notwendig)
+            // Lauschen auf allen Schnittstellen
             app.Run();
         }
     }

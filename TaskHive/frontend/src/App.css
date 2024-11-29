@@ -1,38 +1,167 @@
-.App {
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a237e; /* Dunkelblau */
+  color: white;
+  padding: 10px 20px; /* Reduziertes Padding */
+  display: flex;
+  justify-content: space-between; /* Titel links, Button rechts */
+  align-items: center;
+  font-size: 1.5rem; /* Reduzierte Schriftgröße */
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  box-sizing: border-box; /* Wichtig, um Inhalte sauber auszurichten */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3rem; /* Geringere Schriftgröße */
+  flex-grow: 1; /* Nutzt verfügbaren Platz */
+  text-align: left; /* Sicherstellen, dass der Titel linksbündig bleibt */
+}
+
+.logout-button {
+  background-color: #1a237e; /* Weißer Hintergrund */
+  color: white; /* Dunkelblauer Text */
+  border: 2px solid white; /* Weißer Rand */
+  padding: 5px 10px; /* Kleinere Button-Größe */
+  border-radius: 8px;
+  font-size: 1rem; /* Geringere Schriftgröße */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #ffffff;
+  color: #1a237e;
+}
+
+/* Auth Container */
+.auth-container {
+  margin: 100px auto 0; /* Abstand unterhalb des Headers */
+  width: 400px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  padding: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.auth-container h1 {
+  font-size: 1.8rem;
+  color: #1a237e;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.auth-container form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+}
+
+.auth-container input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.auth-container input:focus {
+  outline: none;
+  border-color: #1a237e;
+  box-shadow: 0 0 5px rgba(26, 35, 126, 0.5);
+}
+
+.auth-container button {
+  background-color: #1a237e;
   color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.auth-container button:hover {
+  background-color: #3949ab;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.auth-container .toggle-link {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #1a237e;
+  cursor: pointer;
+}
+
+.auth-container .toggle-link:hover {
+  color: #3949ab;
+}
+
+.highlight {
+  text-decoration: underline;
+  color: #1a237e; /* Dunkelblau */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.highlight:hover {
+  color: #3949ab; /* Helleres Blau beim Hover */
+}
+
+.auth-container .message {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #e53935;
+}
+
+/* To-Do Container */
+.App {
+  margin-top: 120px; /* Platz unterhalb des fixierten Headers */
+  padding: 20px;
+  text-align: center;
+}
+
+.task-input {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.task-input button {
+  background-color: #1a237e;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.task-item {
+  background: #f8f8f8;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-item button {
+  background-color: #e53935;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
 }
