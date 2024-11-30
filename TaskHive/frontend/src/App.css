@@ -1,36 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+  flex-direction: column;
+}
+
 /* Header */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #1a237e; /* Dunkelblau */
+  background-color: #1a237e;
   color: white;
-  padding: 10px 20px; /* Reduziertes Padding */
+  padding: 10px 20px;
   display: flex;
-  justify-content: space-between; /* Titel links, Button rechts */
+  justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem; /* Reduzierte Schriftgröße */
+  font-size: 1.5rem;
   font-weight: bold;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  box-sizing: border-box; /* Wichtig, um Inhalte sauber auszurichten */
+  box-sizing: border-box;
 }
 
 .header h1 {
   margin: 0;
-  font-size: 3rem; /* Geringere Schriftgröße */
-  flex-grow: 1; /* Nutzt verfügbaren Platz */
-  text-align: left; /* Sicherstellen, dass der Titel linksbündig bleibt */
+  font-size: 3rem;
+  flex-grow: 1;
+  text-align: left;
 }
 
 .logout-button {
-  background-color: #1a237e; /* Weißer Hintergrund */
-  color: white; /* Dunkelblauer Text */
-  border: 2px solid white; /* Weißer Rand */
-  padding: 5px 10px; /* Kleinere Button-Größe */
+  background-color: #1a237e;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 10px;
   border-radius: 8px;
-  font-size: 1rem; /* Geringere Schriftgröße */
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -43,7 +53,6 @@
 
 /* Auth Container */
 .auth-container {
-  margin: 100px auto 0; /* Abstand unterhalb des Headers */
   width: 400px;
   background: #ffffff;
   border-radius: 15px;
@@ -81,16 +90,19 @@
 .auth-container button {
   background-color: #1a237e;
   color: white;
-  border: none;
+  border: 1px solid #1a237e;
   border-radius: 10px;
   padding: 10px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.1s ease;
 }
 
 .auth-container button:hover {
-  background-color: #3949ab;
+  background-color: white;
+  color: #1a237e;
+  border-color: #1a237e;
+  border: 1px solid #1a237e;
 }
 
 .auth-container .toggle-link {
@@ -126,32 +138,43 @@
   margin-top: 120px; /* Platz unterhalb des fixierten Headers */
   padding: 20px;
   text-align: center;
+  width: 1400px;
+  font-size: 20px;
 }
 
 .task-input {
-  padding: 20px;
+  padding-bottom: 30px;
   display: flex;
   gap: 10px;
 }
 
 .task-input input {
   flex: 1;
-  padding: 10px;
+  padding: 1px;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #a9a9a9;
+  font-size: 20px;
 }
 
 .task-input button {
   background-color: #1a237e;
   color: white;
   border-radius: 10px;
-  border: none;
-  padding: 10px;
+  border: 1px solid #1a237e;
+  padding: 15px;
+  transition: background-color 0.1s ease;
+  font-size: 20px;
+}
+
+.task-input button:hover {
+  background-color: white;
+  color: #1a237e;
+  border: 1px solid #1a237e;
 }
 
 .task-item {
-  background: #f8f8f8;
-  padding: 10px;
+  background: #e7e6e6;
+  padding: 15px;
   margin: 10px 0;
   border-radius: 10px;
   display: flex;
@@ -162,6 +185,16 @@
   background-color: #e53935;
   color: white;
   border-radius: 10px;
-  border: none;
+  border: 1px solid transparent; /* Unsichtbarer Rand */
   padding: 5px 10px;
+  transition:
+    background-color 0.1s ease,
+    border-color 0.1s ease; /* Animation hinzufügen */
+  font-size: 20px;
+}
+
+.task-item button:hover {
+  background-color: white;
+  color: #e53935;
+  border-color: #e53935; /* Farbe des Randes ändern */
 }
