@@ -14,13 +14,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Login-Seite */}
         <Route
           path="/login"
           element={<LoginPage setIsAuthenticated={setIsAuthenticated} />}
         />
 
-        {/* Geschützte To-Do-Seite */}
         <Route
           path="/todo"
           element={
@@ -32,7 +30,6 @@ function App() {
           }
         />
 
-        {/* Standardroute: Weiterleitung zur Login-Seite */}
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </Router>

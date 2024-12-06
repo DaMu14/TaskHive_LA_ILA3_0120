@@ -1,3 +1,4 @@
+/* Allgemeines Layout */
 body {
   display: flex;
   justify-content: center;
@@ -102,7 +103,6 @@ body {
   background-color: white;
   color: #1a237e;
   border-color: #1a237e;
-  border: 1px solid #1a237e;
 }
 
 .auth-container .toggle-link {
@@ -118,13 +118,13 @@ body {
 
 .highlight {
   text-decoration: underline;
-  color: #1a237e; /* Dunkelblau */
+  color: #1a237e;
   cursor: pointer;
   font-weight: bold;
 }
 
 .highlight:hover {
-  color: #3949ab; /* Helleres Blau beim Hover */
+  color: #3949ab;
 }
 
 .auth-container .message {
@@ -135,7 +135,7 @@ body {
 
 /* To-Do Container */
 .App {
-  margin-top: 120px; /* Platz unterhalb des fixierten Headers */
+  margin-top: 120px;
   padding: 20px;
   text-align: center;
   width: 1400px;
@@ -179,22 +179,41 @@ body {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.task-item button {
-  background-color: #e53935;
+.task-buttons {
+  display: flex;
+  gap: 30px; /* Abstand zwischen den Buttons */
+}
+
+.complete-button,
+.delete-button {
+  background-color: #e53935; /* Standard Rot für "Löschen"-Button */
   color: white;
   border-radius: 10px;
-  border: 1px solid transparent; /* Unsichtbarer Rand */
-  padding: 5px 10px;
+  border: 1px solid transparent;
+  padding: 5px 15px;
   transition:
     background-color 0.1s ease,
-    border-color 0.1s ease; /* Animation hinzufügen */
-  font-size: 20px;
+    border-color 0.1s ease;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.task-item button:hover {
+.complete-button:hover,
+.delete-button:hover {
   background-color: white;
-  color: #e53935;
-  border-color: #e53935; /* Farbe des Randes ändern */
+  color: #e53935; /* Rot für Text */
+  border-color: #e53935; /* Rahmenfarbe */
+}
+
+.complete-button {
+  background-color: #4caf50; /* Grün für den "Erledigt"-Button */
+}
+
+.complete-button:hover {
+  color: #4caf50; /* Text wird grün beim Hover */
+  border-color: #4caf50; /* Rahmen wird grün */
 }

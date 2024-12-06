@@ -7,13 +7,13 @@ namespace Backend.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)] // MongoDB generiert automatisch eine ObjectId
-        public string Id { get; set; }
+        public string? Id { get; set; } // Nullable machen, um Validierungsprobleme zu vermeiden
 
         [BsonElement("name")]
         public string Name { get; set; }
 
         [BsonElement("dueDate")]
-        public DateTime DueDate { get; set; }
+        public DateOnly DueDate { get; set; }
 
         [BsonElement("isCompleted")]
         public bool IsCompleted { get; set; }

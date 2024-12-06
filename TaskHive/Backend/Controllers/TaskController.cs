@@ -9,84 +9,78 @@ namespace Backend.Controllers
     [ApiController]
     public class TaskController : ControllerBase
     {
-        private readonly MongoDbService _mongoDbService;
+        private readonly MongoDbService _service;
 
-        public TaskController(MongoDbService mongoDbService)
+        public TaskController(MongoDbService service)
         {
-            _mongoDbService = mongoDbService;
+            _service = service;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var items = await _mongoDbService.GetAllAsync();
+            var items = await _service.GetAllAsync();
             return Ok(items);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
         {
-            if (!ObjectId.TryParse(id, out _))
-                return BadRequest("Invalid ID format");
+            var item = await _service.GetAsync(id);
 
-            var item = await _mongoDbService.GetAsync(id);
             if (item == null)
-                return NotFound("Item not found");
+                return NotFound("Aufgabe wurde nicht gefunden.");
 
             return Ok(item);
         }
 
-
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateItemRequest request)
+        public async Task<IActionResult> Create([FromBody] Item newItem)
         {
-            if (request == null || string.IsNullOrEmpty(request.Name))
-                return BadRequest("Name darf nicht leer sein.");
+            Console.WriteLine($"Empfangene Daten: {System.Text.Json.JsonSerializer.Serialize(newItem)}");
 
-            if (request.DueDate == default)
-                return BadRequest("Ein gültiges Fälligkeitsdatum muss angegeben werden.");
+            if (string.IsNullOrEmpty(newItem.Name))
+                return BadRequest("Der Name darf nicht leer sein.");
 
-            // Erstelle das neue Item mit den zusätzlichen Feldern
-            var newItem = new Item
+            if (newItem.Id == null)
             {
-                Name = request.Name,
-                DueDate = request.DueDate.Date,
-                IsCompleted = request.IsCompleted,
-                Id = ObjectId.GenerateNewId().ToString() // Optional: Erstelle die ID explizit
-            };
+                // MongoDB generiert automatisch eine neue Id
+                newItem.Id = ObjectId.GenerateNewId().ToString();
+            }
 
-            await _mongoDbService.CreateAsync(newItem);
-
-            // Rückgabe mit dem erstellten Objekt
-            return CreatedAtAction(nameof(GetById), new { id = newItem.Id }, newItem);
+            await _service.CreateAsync(newItem);
+            return Ok(newItem);
         }
+
+
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(string id, [FromBody] UpdateItemRequest request)
+        public async Task<IActionResult> Update(string id, [FromBody] Item updatedItem)
         {
-            if (request == null || string.IsNullOrEmpty(request.Name))
-                return BadRequest("Name cannot be empty");
+            var existingItem = await _service.GetAsync(id);
 
-            var existingItem = await _mongoDbService.GetAsync(id);
             if (existingItem == null)
-                return NotFound("Item not found");
+                return NotFound("Aufgabe wurde nicht gefunden.");
 
-            // Aktualisiere nur das Feld "Name"
-            existingItem.Name = request.Name;
-            await _mongoDbService.UpdateAsync(id, existingItem);
+            existingItem.Name = updatedItem.Name;
+            existingItem.DueDate = updatedItem.DueDate;
+            existingItem.IsCompleted = updatedItem.IsCompleted;
 
-            return NoContent(); // Erfolgreiche Bearbeitung ohne Rückgabe
+            await _service.UpdateAsync(id, existingItem);
+
+            return Ok("Aufgabe wurde aktualisiert.");
         }
-        
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(string id) // Ändere den Typ von int zu string
-        {
-            var item = await _mongoDbService.GetAsync(id);
-            if (item == null)
-                return NotFound("Item not found");
 
-            await _mongoDbService.DeleteAsync(id);
-            return NoContent();
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(string id)
+        {
+            var item = await _service.GetAsync(id);
+
+            if (item == null)
+                return NotFound("Aufgabe wurde nicht gefunden.");
+
+            await _service.DeleteAsync(id);
+            return Ok("Aufgabe wurde gelöscht.");
         }
     }
 }

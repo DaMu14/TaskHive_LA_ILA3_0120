@@ -26,14 +26,12 @@ namespace Backend.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<User>> Register(UserDto request)
         {
-            // Überprüfen, ob Benutzer bereits existiert
             var existingUser = await _userRepository.GetUserByUsernameAsync(request.Username);
             if (existingUser != null)
             {
                 return BadRequest("User already exists.");
             }
 
-            // Passwort-Hash generieren
             string passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password);
 
             // Neuen Benutzer erstellen
@@ -67,7 +65,6 @@ namespace Backend.Controllers
 
         private string GenerateJwtToken(User user)
         {
-            // Ansprüche für den Token definieren
             List<Claim> claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, user.Username)
