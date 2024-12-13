@@ -184,12 +184,12 @@ body {
 
 .task-buttons {
   display: flex;
-  gap: 30px; /* Abstand zwischen den Buttons */
+  gap: 30px;
 }
 
 .complete-button,
 .delete-button {
-  background-color: #e53935; /* Standard Rot für "Löschen"-Button */
+  background-color: #e53935;
   color: white;
   border-radius: 10px;
   border: 1px solid transparent;
@@ -205,15 +205,26 @@ body {
 .complete-button:hover,
 .delete-button:hover {
   background-color: white;
-  color: #e53935; /* Rot für Text */
-  border-color: #e53935; /* Rahmenfarbe */
+  color: #e53935;
+  border-color: #e53935;
 }
 
 .complete-button {
-  background-color: #4caf50; /* Grün für den "Erledigt"-Button */
+  background-color: #1a237e;
 }
 
 .complete-button:hover {
-  color: #4caf50; /* Text wird grün beim Hover */
-  border-color: #4caf50; /* Rahmen wird grün */
+  color: #1a237e;
+  border-color: #1a237e;
+}
+
+.complete-button.completed {
+  background-color: #208a1f;
+  color: white;
+}
+
+.complete-button.completed:hover {
+  background-color: white;
+  border-color: #208a1f;
+  color: #208a1f;
 }

@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Backend.Models;
 using Backend.Services;
 using MongoDB.Bson;
@@ -16,6 +16,7 @@ namespace Backend.Controllers
             _service = service;
         }
 
+        // Alle Aufgaben abrufen
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -23,6 +24,7 @@ namespace Backend.Controllers
             return Ok(items);
         }
 
+        // Einzelne Aufgabe abrufen
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
         {
@@ -34,6 +36,7 @@ namespace Backend.Controllers
             return Ok(item);
         }
 
+        // Aufgabe erstellen
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] Item newItem)
         {
@@ -41,6 +44,9 @@ namespace Backend.Controllers
 
             if (string.IsNullOrEmpty(newItem.Name))
                 return BadRequest("Der Name darf nicht leer sein.");
+
+            if (string.IsNullOrEmpty(newItem.UserId))
+                return BadRequest("Die Benutzer-ID darf nicht leer sein.");
 
             if (newItem.Id == null)
             {
@@ -52,8 +58,7 @@ namespace Backend.Controllers
             return Ok(newItem);
         }
 
-
-
+        // Aufgabe aktualisieren
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, [FromBody] Item updatedItem)
         {
@@ -65,12 +70,14 @@ namespace Backend.Controllers
             existingItem.Name = updatedItem.Name;
             existingItem.DueDate = updatedItem.DueDate;
             existingItem.IsCompleted = updatedItem.IsCompleted;
+            existingItem.UserId = updatedItem.UserId; // Benutzer-ID aktualisieren
 
             await _service.UpdateAsync(id, existingItem);
 
             return Ok("Aufgabe wurde aktualisiert.");
         }
 
+        // Aufgabe löschen
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {

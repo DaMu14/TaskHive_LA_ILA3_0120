@@ -1,4 +1,4 @@
-﻿using Backend.Models;
+using Backend.Models;
 using MongoDB.Driver;
 
 namespace Backend.Repositories
@@ -27,6 +27,11 @@ namespace Backend.Repositories
         public async Task<User?> GetUserByUsernameAsync(string username)
         {
             return await _usersCollection.Find(u => u.Username == username).FirstOrDefaultAsync();
+        }
+
+        public async Task<List<User>> GetAllUsersAsync()
+        {
+            return await _usersCollection.Find(u => true).ToListAsync();
         }
 
         public async Task<bool> DeleteUserByIdAsync(string userId)

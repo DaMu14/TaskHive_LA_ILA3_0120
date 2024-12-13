@@ -1,4 +1,4 @@
-﻿using Backend.Repositories;
+using Backend.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Backend.Models;
 
@@ -14,6 +14,17 @@ namespace Backend.Controllers
             public UsersController(UserRepository userRepository)
             {
                 _userRepository = userRepository;
+            }
+
+            // Benutzer abrufen
+            [HttpGet]
+            public async Task<IActionResult> GetUser()
+            {
+                var user = await _userRepository.GetAllUsersAsync();
+                if (user == null)
+                    return NotFound(new { Message = "Benutzer wurde nicht gefunden." });
+
+                return Ok(user);
             }
 
             // Benutzer löschen anhand der ID

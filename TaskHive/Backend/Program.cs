@@ -10,18 +10,18 @@ namespace Backend
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // CORS-Politik, die Anfragen von überall erlaubt
+            // CORS-Politik, die Anfragen von ï¿½berall erlaubt
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll",
                     policy => policy
-                        .AllowAnyOrigin()  // Erlaubt Anfragen von allen Ursprüngen
+                        .AllowAnyOrigin()  // Erlaubt Anfragen von allen Ursprï¿½ngen
                         .AllowAnyMethod()  // Erlaubt alle HTTP-Methoden (GET, POST, etc.)
                         .AllowAnyHeader()  // Erlaubt alle Header
                 );
             });
 
-            // Konfiguration für die Datenbankeinstellungen
+            // Konfiguration fï¿½r die Datenbankeinstellungen
             builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("DatabaseSettings"));
             builder.Services.AddSingleton<MongoDbService>();
             builder.Services.AddSingleton<UserRepository>();
