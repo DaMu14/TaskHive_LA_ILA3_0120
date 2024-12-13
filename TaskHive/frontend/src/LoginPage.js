@@ -13,6 +13,12 @@ function LoginPage({ setIsAuthenticated }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setMessage(""); // Fehlermeldung zurücksetzen
+
+    if (password.length < 5) {
+      setMessage("Das Passwort muss mindestens 5 Zeichen lang sein.");
+      return;
+    }
 
     const endpoint = isLogin ? `${apiBaseUrl}/login` : `${apiBaseUrl}/register`;
 
