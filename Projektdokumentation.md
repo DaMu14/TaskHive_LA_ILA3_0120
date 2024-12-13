@@ -117,8 +117,24 @@ Wir haben uns dazu entschieden, dass Robin Sacher das Login, und alle Arbeitspak
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+| 1.1  | 13.12.2024  | OK    | Damian Müller       |
+| 2.1  | 13.12.2024  | OK   | Damian Müller       |
+| 2.2  | 13.12.2024 | OK  | Damian Müller  |
+| 3.1  | 13.12.2024 |     | Damian Müller  |
+| 4.1 | 13.12.2024  |     | Damian Müller   |
+| 5.1 | 13.12.2024  | OK  | Damian Müller  |
+| 6.1 | 13.12.2024 | OK   | Damian Müller  |
+| 7.1  | 13.12.2024 |     | Damian Müller  |
+| 7.2 | 13.12.2024  |      | Damian Müller  |
+| 8.1 | 13.12.2024  |      | Damin Müller   |
+| 8.2 | 13.12.2024  |      | Damian Müller  |
+| 9.1  | 13.12.2024 |      | Damian Müller  |
+| 10.1 | 13.12.2024 |      | Damian Müller |
+| 11.1 | 13.12.2024 |      | Damian Müller  |
+| 12.1 | 13.12.2024 |       | Damian Müller |
+| 12.2 | 13.12.2024 | OK   | Damian Müller  | 
+| 12.3 | 13.12.2024 | OK   | Damian Müller  |
+| 14.1 | 13.12.2024 | OK    | Damian Müller |
 
 ✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
