@@ -100,7 +100,7 @@ Wir haben uns dazu entschieden, dass Robin Sacher das Login, und alle Arbeitspak
 | ---- | ----- | --------- | ------------- | ----------------- |
 | 1.A  | 29.11.2024  | Robin Sacher   | 60 min        |   50 min                |
 | 2.A | 13.12.2024  | Robin Sacher   |    60 min    |     180 min  |
-| 3.A  | 13.12.2024  | Robin Sacher   |  45 min   |     | 
+| 3.A  | 13.12.2024  | Robin Sacher   |  45 min   | 200 min    | 
 | 4.A  | 6.12.2024   |Robin Sacher  |   45 min     | 150 min     |
 | 5.A  |  6.12.2024  | Robin Sacher   | 30 min   |   120 min     |
 | 6.A  |  6.12.2024   | Robin Sacher   | 30 min    | 190 min    |
