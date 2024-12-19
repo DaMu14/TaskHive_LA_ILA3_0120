@@ -48,6 +48,22 @@ namespace Backend.Controllers
             return CreatedAtAction(nameof(GetShoppingListById), new { id = newShoppingList.id }, newShoppingList);
         }
 
+        // POST: api/ShoppingList/{listId}/item
+        [HttpPost("{listId}/item")]
+        public async Task<ActionResult> AddShoppingItem(string listId, [FromBody] ShoppingItem newItem)
+        {
+            var shoppingList = await _shoppingListsCollection.Find(list => list.id == listId).FirstOrDefaultAsync();
+
+            if (shoppingList == null)
+                return NotFound($"Shopping list with ID {listId} not found.");
+
+            shoppingList.Items.Add(newItem);
+            await _shoppingListsCollection.ReplaceOneAsync(list => list.id == listId, shoppingList);
+
+            return Ok(newItem);
+        }
+
+
         // PUT: api/ShoppingList/{id}
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdateShoppingList(string id, [FromBody] ShoppingList updatedShoppingList)

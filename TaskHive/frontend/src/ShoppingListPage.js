@@ -7,7 +7,7 @@ function ShoppingListPage({ setIsAuthenticated }) {
   const [shoppingItems, setShoppingItems] = useState([]);
   const [newItemName, setNewItemName] = useState("");
 
-  const SHOPPING_API_URL = "http://localhost:5000/api/shopping";
+  const SHOPPING_API_URL = "http://localhost:5000/api/ShoppingList";
 
   useEffect(() => {
     loadShoppingItems();
@@ -31,7 +31,7 @@ function ShoppingListPage({ setIsAuthenticated }) {
 
     try {
       const newItem = { name: newItemName, purchased: false };
-      const response = await fetch(SHOPPING_API_URL, {
+      const response = await fetch(`${SHOPPING_API_URL}/{listId}/item`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newItem),
