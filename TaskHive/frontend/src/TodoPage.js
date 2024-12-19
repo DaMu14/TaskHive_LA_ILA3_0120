@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./App.css";
 
 function TodoPage({ setIsAuthenticated }) {
+  const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
   const [users, setUsers] = useState([]);
   const [newTaskName, setNewTaskName] = useState("");
@@ -129,6 +131,7 @@ function TodoPage({ setIsAuthenticated }) {
     deleteTask,
     toggleCompletion,
     handleLogout,
+    navigate,
   });
 }
 
@@ -145,14 +148,20 @@ function renderTodoPage({
   deleteTask,
   toggleCompletion,
   handleLogout,
+  navigate,
 }) {
   return (
     <div>
       <header className="header">
         <h1>Task Hive</h1>
-        <button onClick={handleLogout} className="logout-button">
-          Logout
-        </button>
+        <div>
+          <button onClick={handleLogout} className="logout-button">
+            Logout
+          </button>
+          <button onClick={() => navigate("/home")} className="home-button">
+            Zurück zur Startseite
+          </button>
+        </div>
       </header>
 
       <div className="App">
