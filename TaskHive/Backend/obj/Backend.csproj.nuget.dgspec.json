@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A_119884\\OneDrive - BBBaden\\Desktop\\TaskHiveEinkaufsliste\\TaskHive\\Backend\\Backend.csproj": {}
+    "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A_119884\\OneDrive - BBBaden\\Desktop\\TaskHiveEinkaufsliste\\TaskHive\\Backend\\Backend.csproj": {
+    "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A_119884\\OneDrive - BBBaden\\Desktop\\TaskHiveEinkaufsliste\\TaskHive\\Backend\\Backend.csproj",
+        "projectUniqueName": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "C:\\Users\\A_119884\\OneDrive - BBBaden\\Desktop\\TaskHiveEinkaufsliste\\TaskHive\\Backend\\Backend.csproj",
-        "packagesPath": "C:\\Users\\A_119884\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A_119884\\OneDrive - BBBaden\\Desktop\\TaskHiveEinkaufsliste\\TaskHive\\Backend\\obj\\",
+        "projectPath": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\da407\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\A_119884\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\da407\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +44,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net7.0": {
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -28,7 +28,7 @@ function LoginPage({ setIsAuthenticated }) {
       if (isLogin) {
         setIsAuthenticated(true);
         localStorage.setItem("token", response.data); // JWT speichern
-        navigate("/todo"); // Weiterleitung zur To-Do-Seite
+        navigate("/home"); 
       } else {
         setMessage("Registrierung erfolgreich! Bitte loggen Sie sich ein.");
         setIsLogin(true); // Zur Login-Ansicht wechseln

@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import LoginPage from "./LoginPage";
 import TodoPage from "./TodoPage";
+import ShoppingListPage from "./ShoppingListPage";
+import HomePage from "./HomePage";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -17,6 +19,17 @@ function App() {
         <Route
           path="/login"
           element={<LoginPage setIsAuthenticated={setIsAuthenticated} />}
+        />
+
+<Route
+          path="/home"
+          element={
+            isAuthenticated ? (
+              <HomePage />
+            ) : (
+              <Navigate to="/login" replace />
+            )
+          }
         />
 
         <Route
@@ -30,10 +43,23 @@ function App() {
           }
         />
 
+        <Route
+          path="/shopping-lists"
+          element={
+            isAuthenticated ? (
+              <ShoppingListPage />
+            ) : (
+              <Navigate to="/login" replace />
+            )
+          }
+        />
+
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </Router>
   );
 }
+
+
 
 export default App;
