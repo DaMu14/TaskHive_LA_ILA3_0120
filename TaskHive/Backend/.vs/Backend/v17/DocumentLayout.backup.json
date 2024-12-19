@@ -5,6 +5,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{B3E3D034-5495-468A-8D2E-6F9754FCD5A8}|Backend.csproj|c:\\users\\da407\\downloads\\taskhive\\taskhive_la_ila3_0120\\taskhive\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3E3D034-5495-468A-8D2E-6F9754FCD5A8}|Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E3D034-5495-468A-8D2E-6F9754FCD5A8}|Backend.csproj|c:\\users\\da407\\downloads\\taskhive\\taskhive_la_ila3_0120\\taskhive\\backend\\services\\mongodbservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E3D034-5495-468A-8D2E-6F9754FCD5A8}|Backend.csproj|solutionrelative:services\\mongodbservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E3D034-5495-468A-8D2E-6F9754FCD5A8}|Backend.csproj|c:\\users\\da407\\downloads\\taskhive\\taskhive_la_ila3_0120\\taskhive\\backend\\models\\shoppinglist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E3D034-5495-468A-8D2E-6F9754FCD5A8}|Backend.csproj|solutionrelative:models\\shoppinglist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E3D034-5495-468A-8D2E-6F9754FCD5A8}|Backend.csproj|c:\\users\\da407\\downloads\\taskhive\\taskhive_la_ila3_0120\\taskhive\\backend\\models\\shoppingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E3D034-5495-468A-8D2E-6F9754FCD5A8}|Backend.csproj|solutionrelative:models\\shoppingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E3D034-5495-468A-8D2E-6F9754FCD5A8}|Backend.csproj|c:\\users\\da407\\downloads\\taskhive\\taskhive_la_ila3_0120\\taskhive\\backend\\controllers\\shoppinglistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E3D034-5495-468A-8D2E-6F9754FCD5A8}|Backend.csproj|solutionrelative:controllers\\shoppinglistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,21 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 12,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAawC4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T15:34:39.328Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -60,6 +63,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MongoDbServices.cs",
+              "DocumentMoniker": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Services\\MongoDbServices.cs",
+              "RelativeDocumentMoniker": "Services\\MongoDbServices.cs",
+              "ToolTip": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Services\\MongoDbServices.cs",
+              "RelativeToolTip": "Services\\MongoDbServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T16:43:20.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShoppingList.cs",
+              "DocumentMoniker": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Models\\ShoppingList.cs",
+              "RelativeDocumentMoniker": "Models\\ShoppingList.cs",
+              "ToolTip": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Models\\ShoppingList.cs",
+              "RelativeToolTip": "Models\\ShoppingList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T16:43:01.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShoppingItem.cs",
+              "DocumentMoniker": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Models\\ShoppingItem.cs",
+              "RelativeDocumentMoniker": "Models\\ShoppingItem.cs",
+              "ToolTip": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Models\\ShoppingItem.cs",
+              "RelativeToolTip": "Models\\ShoppingItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T16:42:51.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShoppingListController.cs",
+              "DocumentMoniker": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Controllers\\ShoppingListController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ShoppingListController.cs",
+              "ToolTip": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Controllers\\ShoppingListController.cs",
+              "RelativeToolTip": "Controllers\\ShoppingListController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwvzoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T16:42:22.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\da407\\Downloads\\TaskHive\\TaskHive_LA_ILA3_0120\\TaskHive\\Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T15:34:39.328Z",
+              "EditorCaption": ""
             }
           ]
         }
