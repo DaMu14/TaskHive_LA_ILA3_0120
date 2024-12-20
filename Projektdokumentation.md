@@ -34,8 +34,6 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 | 13   | Muss            | Randbedingung | Als ein Entwickler möchte ich, dass das Frontend mit React.js umgesetzt wird, um eine neue Technologie kennen zu lernen.                                         |
 | 14   | Muss            | Randbedingung | Als ein Entwickler möchte ich, dass das Backend mindestens mit .Net Version 6 oder höher umgesetzt wird, um zu gewährleisten, dass ein Framework verwendet wird. |
 
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: _Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️_.
-
 ### 1.3 Testfälle
 | TC-№ | Ausgangslage                                | Eingabe                                                                            | Erwartete Ausgabe                                                                 |
 | ---- | ------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -97,8 +95,6 @@ Ausserden haben wir uns dazu entschieden, dass die Funktion, dass man Aufgaben i
 | 11.A | 13.12.2024   | Julian Hitz    | 45 min   |       |
 |      | 22.11.2024   | Julian Hitz    | 30 min   |       |
 
-✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
-
 ## 5 Kontrollieren
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
@@ -121,7 +117,7 @@ Ausserden haben wir uns dazu entschieden, dass die Funktion, dass man Aufgaben i
 | 12.3 | 13.12.2024 | OK   | Damian Müller  |
 | 14.1 | 13.12.2024 | OK    | Damian Müller |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+Testbericht: ...
 
 ## 6 Auswerten
 Portfolioberichte:
