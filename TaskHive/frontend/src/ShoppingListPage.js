@@ -88,7 +88,6 @@ function ShoppingListPage({ setIsAuthenticated }) {
     };
 
     try {
-      
       const response = await fetch(`${SHOPPING_API_URL}/${selectedListId}/item`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -100,18 +99,14 @@ function ShoppingListPage({ setIsAuthenticated }) {
       }
 
       const createdItem = await response.json();
-      setShoppingItems((prevItems) => [...prevItems, createdItem]); // Neues Element zur Liste hinzufügen
-      setNewItemName(""); // Eingabefeld leeren
-
-      // Nach dem Hinzufügen eines Elements, alle Listen gleichmäßig auffüllen
-      synchronizeLists();
-    } catch (error) {
-      console.error("Fehler beim Hinzufügen des Elements:", error);
-      alert("Fehler beim Hinzufügen des Elements.");
-    }
+    setShoppingItems([...shoppingItems, createdItem]);
+    setNewItemName("");
+  } catch (error) {
+    console.error("Fehler beim Hinzufügen des Elements:", error);
+    alert("Fehler beim Hinzufügen des Elements.");
+  }
   };
 
-  // Alle Listen gleich groß machen
   const synchronizeLists = () => {
     // Finde die maximale Anzahl von Elementen in einer Liste
     const maxItemsLength = Math.max(...shoppingLists.map(list => list.items.length), 0);
