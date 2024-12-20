@@ -190,7 +190,7 @@ function ShoppingListPage({ setIsAuthenticated }) {
                     onClick={() => confirmDeleteShoppingList(list.id)}
                     className="delete-button"
                   >
-                    🗑️
+                    Löschen
                   </button>
                 </div>
               ))}

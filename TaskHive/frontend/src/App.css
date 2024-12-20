@@ -196,11 +196,11 @@ body {
   font-size: 1.2rem;
   padding: 5px;
   margin-left: 10px;
+  border-radius: 10px;
 }
 
-.complete-button:hover {
-  background-color: darkred;
-}
+.complete-button:hover,
+
 .delete-button:hover {
   background-color: white;
   color: #e53935;
@@ -458,21 +458,9 @@ body {
   font-size: 16px;
 }
 
-.shopping-item .delete-button {
-  background-color: #e53935;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 5px 10px;
-  font-size: 14px;
-  cursor: pointer;
-}
 
-.shopping-item .delete-button:hover {
-  background-color: white;
-  color: #e53935;
-  border: 1px solid #e53935;
-}
+
+
 
 .delete-confirmation {
   background-color: rgba(0, 0, 0, 0.7);
