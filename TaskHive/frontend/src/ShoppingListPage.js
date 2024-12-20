@@ -10,6 +10,8 @@ function ShoppingListPage({ setIsAuthenticated }) {
   const [shoppingItems, setShoppingItems] = useState([]); // Elemente der ausgewählten Liste
   const [newListName, setNewListName] = useState(""); // Name der neuen Liste
   const [newItemName, setNewItemName] = useState(""); // Name des neuen Elements
+  const [isDeleteConfirmationVisible, setIsDeleteConfirmationVisible] = useState(false); // Bestätigung für Löschen
+  const [listToDelete, setListToDelete] = useState(null); // Liste, die gelöscht werden soll
 
   const SHOPPING_API_URL = "http://localhost:5000/api/ShoppingList";
 
@@ -74,6 +76,33 @@ function ShoppingListPage({ setIsAuthenticated }) {
     }
   };
 
+  // Liste löschen - Bestätigung anzeigen
+  const confirmDeleteShoppingList = (listId) => {
+    setListToDelete(listId); // ID der zu löschenden Liste speichern
+    setIsDeleteConfirmationVisible(true); // Bestätigungsdialog anzeigen
+  };
+
+  // Löschen der Liste
+  const deleteShoppingList = async () => {
+    try {
+      const response = await fetch(`${SHOPPING_API_URL}/${listToDelete}`, {
+        method: "DELETE",
+      });
+
+      if (!response.ok) {
+        throw new Error("Fehler beim Löschen der Liste.");
+      }
+
+      // Nach dem Löschen die Liste aus dem Zustand entfernen
+      setShoppingLists(shoppingLists.filter((list) => list.id !== listToDelete));
+      setIsDeleteConfirmationVisible(false); // Bestätigung schließen
+      setListToDelete(null); // Zurücksetzen
+    } catch (error) {
+      console.error("Fehler beim Löschen der Liste:", error);
+      alert("Fehler beim Löschen der Liste.");
+    }
+  };
+
   // Neues Element zur ausgewählten Liste hinzufügen
   const addShoppingItem = async () => {
     if (newItemName.trim() === "") {
@@ -99,29 +128,12 @@ function ShoppingListPage({ setIsAuthenticated }) {
       }
 
       const createdItem = await response.json();
-    setShoppingItems([...shoppingItems, createdItem]);
-    setNewItemName("");
-  } catch (error) {
-    console.error("Fehler beim Hinzufügen des Elements:", error);
-    alert("Fehler beim Hinzufügen des Elements.");
-  }
-  };
-
-  const synchronizeLists = () => {
-    // Finde die maximale Anzahl von Elementen in einer Liste
-    const maxItemsLength = Math.max(...shoppingLists.map(list => list.items.length), 0);
-
-    const updatedLists = shoppingLists.map(list => {
-      const missingItems = maxItemsLength - list.items.length;
-      // Falls eine Liste weniger Items hat, fügen wir leere Items hinzu
-      if (missingItems > 0) {
-        const emptyItems = Array(missingItems).fill({ name: '', purchased: false });
-        list.items = [...list.items, ...emptyItems];
-      }
-      return list;
-    });
-
-    setShoppingLists(updatedLists); // Alle Listen aktualisieren
+      setShoppingItems([...shoppingItems, createdItem]);
+      setNewItemName("");
+    } catch (error) {
+      console.error("Fehler beim Hinzufügen des Elements:", error);
+      alert("Fehler beim Hinzufügen des Elements.");
+    }
   };
 
   // Zurück zur Listenübersicht
@@ -167,15 +179,31 @@ function ShoppingListPage({ setIsAuthenticated }) {
             <div className="shopping-lists">
               <h2>Listen</h2>
               {shoppingLists.map((list) => (
-                <button
-                  key={list.id}
-                  className="list-button"
-                  onClick={() => loadShoppingItems(list.id, list.title)} // List Name hier verwenden
-                >
-                  {list.title}
-                </button>
+                <div key={list.id} className="list-item">
+                  <button
+                    className="list-button"
+                    onClick={() => loadShoppingItems(list.id, list.title)}
+                  >
+                    {list.title}
+                  </button>
+                  <button
+                    onClick={() => confirmDeleteShoppingList(list.id)}
+                    className="delete-button"
+                  >
+                    🗑️
+                  </button>
+                </div>
               ))}
             </div>
+          </div>
+        )}
+
+        {/* Bestätigungslöschen Dialog */}
+        {isDeleteConfirmationVisible && (
+          <div className="delete-confirmation">
+            <p>Sind Sie sicher, dass Sie diese Liste löschen möchten?</p>
+            <button onClick={deleteShoppingList}>Ja</button>
+            <button onClick={() => setIsDeleteConfirmationVisible(false)}>Abbrechen</button>
           </div>
         )}
 
