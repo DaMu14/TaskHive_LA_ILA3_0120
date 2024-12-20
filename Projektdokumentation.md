@@ -1,6 +1,4 @@
 # Projekt-Dokumentation TaskHive_LA_ILA3_0120
-
-
 Gruppenmitglieder:
 - Robin Sacher
 - Damian Müller
@@ -13,15 +11,12 @@ Gruppenmitglieder:
 | 22.11.2024 | 1.0.0   |                                                                                                                                                                                                    |
 
 ## 1 Informieren
-
 ### 1.1 Ihr Projekt
-
 Wir erstellen eine Webanwendung, in der man Aufgaben und eine Einkaufsliste in der Familie verwalten und organisieren kann.
 
 In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen unsere Fähigkeiten in der Frontend- und Backend-Entwicklung vertiefen und dabei eine Datenbank einsetzen. Außerdem möchten wir neue Technologien wie React.js und HTML Bootstrap kennenlernen, mit denen wir bisher noch nicht gearbeitet haben. Durch die Kombination dieser Elemente hoffen wir, unser Wissen zu erweitern und eine ansprechende Website zu gestalten. So können wir praktische Erfahrungen sammeln und unser Verständnis für moderne Webentwicklung verbessern.
 
 ### 1.2 Anforderungsanalyse
-
 | US-№ | Verbindlichkeit | Typ           | Beschreibung                                                                                                                                                     |
 | ---- | --------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1    | Muss            | Funktional    | Als ein Benutzer möchte ich verschiedene Benutzer erstellen können, damit ich alle Familienmitglieder erfassen kann.                                             |
@@ -42,7 +37,6 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: _Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️_.
 
 ### 1.3 Testfälle
-
 | TC-№ | Ausgangslage                                | Eingabe                                                                            | Erwartete Ausgabe                                                                 |
 | ---- | ------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | 1.1  | Webseite gestartet                          | Neuer Benutzer hinzufügen auswählen                                                | neuer Benutzer wird hinzugefügt                                                   |
@@ -64,14 +58,10 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 | 12.3 | Webseite in verschiedenen Browsern geöffnet | SPA-Funktionalität testen                                                          | Die Anwendung funktioniert einwandfrei in Chrome, Firefox und Edge                |
 | 14.1 | Backend gestartet                           | Überprüfung der .NET-Version                                                       | .NET-Version ist 6 oder höher                                                     |
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
-
 ### 1.4 Diagramme
-
 ![Use case diagram](https://github.com/user-attachments/assets/8ced3fa4-14e5-4e2a-94c5-9c6c82542922)
 
 ## 2 Planen
-
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
 | 1.A  | 29.11.2024       | Robin Sacher          | Multiuser Anwendung       | 60 min            |
@@ -85,20 +75,13 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 | 9.A  | 13.12.2024      | Damian Müller          | Elemente bearbeiten können | 30 min       |
 | 10.A | 13.12.2024      | Damian Müller          | Elemente löschen können | 30 min       |
 | 11.A | 13.12.2024      | Julian Hitz          | Datum hinzufügen können | 45 min       |
-|      | 22.11.2024      | Julian Hitz          | Frontend Darstellung     | 30 min      |
-
-Total:
-
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
-
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
+| 12.A | 22.11.2024      | Julian Hitz          | Frontend Darstellung     | 30 min      |
 
 ## 3 Entscheiden
-
 Wir haben uns dazu entschieden, dass Robin Sacher das Login, und alle Arbeitspakete, welche mit der Aufgabenverwaltung zu tun haben implementiert, weil es so einfacher ist, da diese Arbeitspakete wie ein kleines Bündel sind. 
 Ausserden haben wir uns dazu entschieden, dass die Funktion, dass man Aufgaben im Frontend bearbeiten kann, nicht nötig ist, da man fast schneller ist, wenn man sie löscht und neu erstellt.
-## 4 Realisieren
 
+## 4 Realisieren
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
 | 1.A  | 29.11.2024  | Robin Sacher   | 60 min        |   50 min                |
@@ -117,7 +100,6 @@ Ausserden haben wir uns dazu entschieden, dass die Funktion, dass man Aufgaben i
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
 
 ## 5 Kontrollieren
-
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
 | 1.1  | 13.12.2024  | OK    | Damian Müller       |
@@ -142,5 +124,7 @@ Ausserden haben wir uns dazu entschieden, dass die Funktion, dass man Aufgaben i
 ✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
 ## 6 Auswerten
-
-✍️ Fügen Sie hier eine Verknüpfung zu Ihrem Lern-Bericht ein.
+Portfolioberichte:
+- Robin Sacher: 
+- Damian Müller: 
+- Julian Hitz: 
