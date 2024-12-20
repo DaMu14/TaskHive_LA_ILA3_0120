@@ -139,6 +139,6 @@ Um die Anwendung zu verbessern, sollten zunächst die Fehler in der Einkaufslist
 
 Portfolioberichte:
 
-- Robin Sacher: [text](https://portfolio.bbbaden.ch/view/view.php?t=118468fd554c4fd3f1d2)
+- Robin Sacher: [Portfoliobericht](https://portfolio.bbbaden.ch/view/view.php?t=118468fd554c4fd3f1d2)
 - Damian Müller:
 - Julian Hitz:
