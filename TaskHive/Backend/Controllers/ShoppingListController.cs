@@ -57,6 +57,23 @@ namespace Backend.Controllers
             if (shoppingList == null)
                 return NotFound($"Shopping list with ID {listId} not found.");
 
+            // Generiere eine ID für das neue Item, falls nicht vorhanden
+            if (string.IsNullOrEmpty(newItem.Id))
+            {
+                newItem.Id = Guid.NewGuid().ToString(); // Neue eindeutige ID generieren
+            }
+
+            // Setze Default-Werte, falls diese nicht gesetzt wurden
+            if (newItem.Quantity == 0)
+            {
+                newItem.Quantity = 1; // Setze eine Standardmenge, wenn keine angegeben wurde
+            }
+
+            if (newItem.IsBought == null)
+            {
+                newItem.IsBought = false; // Standardwert für 'isBought'
+            }
+
             shoppingList.Items.Add(newItem);
             await _shoppingListsCollection.ReplaceOneAsync(list => list.id == listId, shoppingList);
 

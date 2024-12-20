@@ -151,6 +151,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Backend.Controllers.ShoppingListController",
+    "Method": "AddShoppingItem",
+    "RelativePath": "api/ShoppingList/{listId}/item",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "listId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newItem",
+        "Type": "Backend.Models.ShoppingItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Backend.Controllers.TaskController",
     "Method": "GetAll",
     "RelativePath": "api/Task",
