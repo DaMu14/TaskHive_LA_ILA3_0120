@@ -129,7 +129,7 @@ Ausserden haben wir uns dazu entschieden, dass die Funktion, dass man Aufgaben i
 | 14.1 | 13.12.2024 | OK ✅    | Damian Müller |
 
 Testbericht:
-Am 13.12.2024 wurden umfangreiche Tests der Webseite zur Verwaltung von Aufgaben und Einkaufslisten durchgeführt. Von insgesamt 19 Testfällen verliefen 11 erfolgreich, während 8 Testfälle fehlschlugen. Positiv hervorzuheben ist, dass die Benutzerverwaltung einwandfrei funktioniert. Auch grundlegende Aufgabenfunktionen wie das Erstellen, Löschen, die Zuweisung an Personen und das Markieren als erledigt liefen fehlerfrei. Die Navigation innerhalb der Seite und die SPA-Funktionalität zeigten ebenfalls keine Probleme, selbst in verschiedenen Browsern.
+Am 13.12.2024 wurden umfangreiche Tests der Webseite zur Verwaltung von Aufgaben und Einkaufslisten durchgeführt. Von insgesamt 18 Testfällen verliefen 10 erfolgreich, während 8 Testfälle fehlschlugen. Positiv hervorzuheben ist, dass die Benutzerverwaltung einwandfrei funktioniert. Auch grundlegende Aufgabenfunktionen wie das Erstellen, Löschen, die Zuweisung an Personen und das Markieren als erledigt liefen fehlerfrei. Die Navigation innerhalb der Seite und die SPA-Funktionalität zeigten ebenfalls keine Probleme, selbst in verschiedenen Browsern.
 
 Dennoch traten wesentliche Fehler in der Einkaufslistenverwaltung auf. Das Erstellen von Einkaufslisten, das Hinzufügen von Elementen sowie das Bearbeiten und Löschen von Listen oder Elementen funktionierten nicht wie erwartet.
 
