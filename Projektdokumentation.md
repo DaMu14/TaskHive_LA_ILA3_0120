@@ -9,8 +9,14 @@ Gruppenmitglieder:
 | Datum      | Version | Zusammenfassung                                                                                                                                                                                    |
 | ---------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 08.11.2024 | 0.0.1   | Heute haben wir den Projektantrag abgegeben und an der Informierenphase gearbeitet und die Anforderungsanalsyse, sowie Testfälle erstellt. Wir haben angefangen ein Use Case Diagram zu erstellen. |
-| 15.11.2024 | 0.0.2   |                                                                                                                                                                                                    |
-| 22.11.2024 | 1.0.0   |                                                                                                                                                                                                    |
+| 15.11.2024 | 0.0.2   | Heute haben wir die Planenphase ausgefüllt.                                                                                                                                                                                                   |
+| 22.11.2024 | 0.0.3   | Heute haben wir mit dem Realisieren begonnen und das Projekt erstellt.                                                                                                                                                                                                   |
+| 29.11.2024 | 0.0.4   | Heute haben wir das Login und Benutzerverwaltung erstellt.                                                                                                                                                                                                  |
+| 06.12.2024 | 0.0.5   | Heute haben wir die Aufgabenverwaltung implementiert                                                                                                                                                                                                   |
+| 13.12.2024 | 1.0.0   | Heute haben wir die Aufgabenverwaltung komplett fertig gestellt und kleine Fehler behoben, sowie die Verwaltung der Einkaufsliste erstellt.                                                                                                                                                                                                   |
+| 20.12.2024 | 1.0.1   |  Heute haben wir unsere Portfolioeinträge geschrieben und letzte Verbesserungen vorgenommen, sowie das Projekt getestet.                                                                                                                                                                                          |
+
+
 
 ## 1 Informieren
 
