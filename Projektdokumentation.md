@@ -1,8 +1,10 @@
 # Projekt-Dokumentation TaskHive_LA_ILA3_0120
 
-☝️ Alle Text-Stellen, welche mit einem ✍️ beginnen, können Sie löschen, sobald Sie die entsprechende Stellen ausgefüllt haben.
 
-✍️ Ihr Gruppenname und Ihre Nachnamen
+Gruppenmitglieder:
+- Robin Sacher
+- Damian Müller
+- Julian Hitz
 
 | Datum      | Version | Zusammenfassung                                                                                                                                                                                    |
 | ---------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -93,7 +95,8 @@ Total:
 
 ## 3 Entscheiden
 
-Wir haben uns dazu entschieden, dass Robin Sacher das Login, und alle Arbeitspakete, welche mit der Aufgabenverwaltung zu tun haben implementiert, da es so einfacher ist.
+Wir haben uns dazu entschieden, dass Robin Sacher das Login, und alle Arbeitspakete, welche mit der Aufgabenverwaltung zu tun haben implementiert, weil es so einfacher ist, da diese Arbeitspakete wie ein kleines Bündel sind. 
+Ausserden haben wir uns dazu entschieden, dass die Funktion, dass man Aufgaben im Frontend bearbeiten kann, nicht nötig ist, da man fast schneller ist, wenn man sie löscht und neu erstellt.
 ## 4 Realisieren
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
