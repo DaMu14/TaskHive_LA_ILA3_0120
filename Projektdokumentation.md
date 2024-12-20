@@ -1,5 +1,7 @@
 # Projekt-Dokumentation TaskHive_LA_ILA3_0120
+
 Gruppenmitglieder:
+
 - Robin Sacher
 - Damian Müller
 - Julian Hitz
@@ -11,12 +13,15 @@ Gruppenmitglieder:
 | 22.11.2024 | 1.0.0   |                                                                                                                                                                                                    |
 
 ## 1 Informieren
+
 ### 1.1 Ihr Projekt
+
 Wir erstellen eine Webanwendung, in der man Aufgaben und eine Einkaufsliste in der Familie verwalten und organisieren kann.
 
 In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen unsere Fähigkeiten in der Frontend- und Backend-Entwicklung vertiefen und dabei eine Datenbank einsetzen. Außerdem möchten wir neue Technologien wie React.js und HTML Bootstrap kennenlernen, mit denen wir bisher noch nicht gearbeitet haben. Durch die Kombination dieser Elemente hoffen wir, unser Wissen zu erweitern und eine ansprechende Website zu gestalten. So können wir praktische Erfahrungen sammeln und unser Verständnis für moderne Webentwicklung verbessern.
 
 ### 1.2 Anforderungsanalyse
+
 | US-№ | Verbindlichkeit | Typ           | Beschreibung                                                                                                                                                     |
 | ---- | --------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1    | Muss            | Funktional    | Als ein Benutzer möchte ich verschiedene Benutzer erstellen können, damit ich alle Familienmitglieder erfassen kann.                                             |
@@ -35,6 +40,7 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 | 14   | Muss            | Randbedingung | Als ein Entwickler möchte ich, dass das Backend mindestens mit .Net Version 6 oder höher umgesetzt wird, um zu gewährleisten, dass ein Framework verwendet wird. |
 
 ### 1.3 Testfälle
+
 | TC-№ | Ausgangslage                                | Eingabe                                                                            | Erwartete Ausgabe                                                                 |
 | ---- | ------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | 1.1  | Webseite gestartet                          | Neuer Benutzer hinzufügen auswählen                                                | neuer Benutzer wird hinzugefügt                                                   |
@@ -57,70 +63,82 @@ In diesem Projekt möchten wir verschiedene Module zusammenführen. Wir wollen u
 | 14.1 | Backend gestartet                           | Überprüfung der .NET-Version                                                       | .NET-Version ist 6 oder höher                                                     |
 
 ### 1.4 Diagramme
+
 ![Use case diagram](https://github.com/user-attachments/assets/8ced3fa4-14e5-4e2a-94c5-9c6c82542922)
 
 ## 2 Planen
-| AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
-| ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  | 29.11.2024       | Robin Sacher          | Multiuser Anwendung       | 60 min            |
-| 2.A  | 13.12.2024      | Robin Sacher         | Aufgaben verwalten können   | 60 min              |
-| 3.A  | 13.12.2024      | Robin Sacher          | Aufgaben zuweisen    | 45 min        | 
-| 4.A  | 06.12.2024      | Damian Müller          | Aufgaben bearbeiten können |  45 min             |
-| 5.A  | 06.12.2024      | Damian Müller          | Aufgaben löschen können | 30 min              |
-| 6.A  | 06.12.2024      | Julian Hitz          | Aufgaben als erledigt kennzeichnen | 30 min | 
-| 7.A  | 06.12.2024      | Julian Hitz         | Liste erstellen können   | 45 min       |
-| 8.A  | 13.12.2024      | Damian Müller          | Elemente hinzufügen können | 30 min       |
-| 9.A  | 13.12.2024      | Damian Müller          | Elemente bearbeiten können | 30 min       |
-| 10.A | 13.12.2024      | Damian Müller          | Elemente löschen können | 30 min       |
-| 11.A | 13.12.2024      | Julian Hitz          | Datum hinzufügen können | 45 min       |
-| 12.A | 22.11.2024      | Julian Hitz          | Frontend Darstellung     | 30 min      |
+
+| AP-№ | Frist      | Zuständig     | Beschreibung                       | geplante Zeit |
+| ---- | ---------- | ------------- | ---------------------------------- | ------------- |
+| 1.A  | 29.11.2024 | Robin Sacher  | Multiuser Anwendung                | 60 min        |
+| 2.A  | 13.12.2024 | Robin Sacher  | Aufgaben verwalten können          | 60 min        |
+| 3.A  | 13.12.2024 | Robin Sacher  | Aufgaben zuweisen                  | 45 min        |
+| 4.A  | 06.12.2024 | Damian Müller | Aufgaben bearbeiten können         | 45 min        |
+| 5.A  | 06.12.2024 | Damian Müller | Aufgaben löschen können            | 30 min        |
+| 6.A  | 06.12.2024 | Julian Hitz   | Aufgaben als erledigt kennzeichnen | 30 min        |
+| 7.A  | 06.12.2024 | Julian Hitz   | Liste erstellen können             | 45 min        |
+| 8.A  | 13.12.2024 | Damian Müller | Elemente hinzufügen können         | 30 min        |
+| 9.A  | 13.12.2024 | Damian Müller | Elemente bearbeiten können         | 30 min        |
+| 10.A | 13.12.2024 | Damian Müller | Elemente löschen können            | 30 min        |
+| 11.A | 13.12.2024 | Julian Hitz   | Datum hinzufügen können            | 45 min        |
+| 12.A | 22.11.2024 | Julian Hitz   | Frontend Darstellung               | 30 min        |
 
 ## 3 Entscheiden
-Wir haben uns dazu entschieden, dass Robin Sacher das Login, und alle Arbeitspakete, welche mit der Aufgabenverwaltung zu tun haben implementiert, weil es so einfacher ist, da diese Arbeitspakete wie ein kleines Bündel sind. 
+
+Wir haben uns dazu entschieden, dass Robin Sacher das Login, und alle Arbeitspakete, welche mit der Aufgabenverwaltung zu tun haben implementiert, weil es so einfacher ist, da diese Arbeitspakete wie ein kleines Bündel sind.
 Ausserden haben wir uns dazu entschieden, dass die Funktion, dass man Aufgaben im Frontend bearbeiten kann, nicht nötig ist, da man fast schneller ist, wenn man sie löscht und neu erstellt.
 
 ## 4 Realisieren
-| AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
-| ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  | 29.11.2024  | Robin Sacher   | 60 min        |   50 min                |
-| 2.A | 13.12.2024  | Robin Sacher   |    60 min    |     180 min  |
-| 3.A  | 13.12.2024  | Robin Sacher   |  45 min   | 200 min    | 
-| 4.A  | 6.12.2024   |Robin Sacher  |   45 min     | 150 min     |
-| 5.A  |  6.12.2024  | Robin Sacher   | 30 min   |   120 min     |
-| 6.A  |  6.12.2024   | Robin Sacher   | 30 min    | 190 min    |
-| 7.A  |  6.12.2024  | Julian Hitz    | 45 min   |      |
-| 8.A  | 13.12.2024   | Damian Müller  | 30 min   |      |
-| 9.A  | 13.12.2024   | Damian Müller  | 30 min   |       |
-| 10.A | 13.12.2024   | Damian Müller  | 30 min    |      |
-| 11.A | 13.12.2024   | Julian Hitz    | 45 min   |       |
-|      | 22.11.2024   | Julian Hitz    | 30 min   |       |
+
+| AP-№ | Datum      | Zuständig     | geplante Zeit | tatsächliche Zeit |
+| ---- | ---------- | ------------- | ------------- | ----------------- |
+| 1.A  | 29.11.2024 | Robin Sacher  | 60 min        | 50 min            |
+| 2.A  | 13.12.2024 | Robin Sacher  | 60 min        | 180 min           |
+| 3.A  | 13.12.2024 | Robin Sacher  | 45 min        | 200 min           |
+| 4.A  | 6.12.2024  | Robin Sacher  | 45 min        | 150 min           |
+| 5.A  | 6.12.2024  | Robin Sacher  | 30 min        | 120 min           |
+| 6.A  | 6.12.2024  | Robin Sacher  | 30 min        | 190 min           |
+| 7.A  | 6.12.2024  | Julian Hitz   | 45 min        |                   |
+| 8.A  | 13.12.2024 | Damian Müller | 30 min        |                   |
+| 9.A  | 13.12.2024 | Damian Müller | 30 min        |                   |
+| 10.A | 13.12.2024 | Damian Müller | 30 min        |                   |
+| 11.A | 13.12.2024 | Julian Hitz   | 45 min        |                   |
+|      | 22.11.2024 | Julian Hitz   | 30 min        |                   |
 
 ## 5 Kontrollieren
-| TC-№ | Datum | Resultat | Tester |
-| ---- | ----- | -------- | ------ |
-| 1.1  | 13.12.2024  | OK    | Damian Müller       |
-| 2.1  | 13.12.2024  | OK   | Damian Müller       |
-| 2.2  | 13.12.2024 | OK  | Damian Müller  |
-| 3.1  | 13.12.2024 |     | Damian Müller  |
-| 4.1 | 13.12.2024  |     | Damian Müller   |
-| 5.1 | 13.12.2024  | OK  | Damian Müller  |
-| 6.1 | 13.12.2024 | OK   | Damian Müller  |
-| 7.1  | 13.12.2024 |     | Damian Müller  |
-| 7.2 | 13.12.2024  |      | Damian Müller  |
-| 8.1 | 13.12.2024  |      | Damin Müller   |
-| 8.2 | 13.12.2024  |      | Damian Müller  |
-| 9.1  | 13.12.2024 |      | Damian Müller  |
-| 10.1 | 13.12.2024 |      | Damian Müller |
-| 11.1 | 13.12.2024 |      | Damian Müller  |
-| 12.1 | 13.12.2024 |       | Damian Müller |
-| 12.2 | 13.12.2024 | OK   | Damian Müller  | 
-| 12.3 | 13.12.2024 | OK   | Damian Müller  |
-| 14.1 | 13.12.2024 | OK    | Damian Müller |
 
-Testbericht: ...
+| TC-№ | Datum      | Resultat | Tester        |
+| ---- | ---------- | -------- | ------------- |
+| 1.1  | 13.12.2024 | OK ✅    | Damian Müller |
+| 2.1  | 13.12.2024 | OK ✅    | Damian Müller |
+| 2.2  | 13.12.2024 | OK ✅    | Damian Müller |
+| 3.1  | 13.12.2024 | OK ✅    | Robin Sacher  |
+| 4.1  | 13.12.2024 | NOK ❌   | Robin Sacher  |
+| 5.1  | 13.12.2024 | OK ✅    | Damian Müller |
+| 6.1  | 13.12.2024 | OK ✅    | Damian Müller |
+| 7.1  | 13.12.2024 | NOK ❌   | Robin Sacher  |
+| 7.2  | 13.12.2024 | OK ✅    | Robin Sacher  |
+| 8.1  | 13.12.2024 | NOK ❌   | Robin Sacher  |
+| 8.2  | 13.12.2024 | NOK ❌   | Robin Sacher  |
+| 9.1  | 13.12.2024 | NOK ❌   | Robin Sacher  |
+| 10.1 | 13.12.2024 | NOK ❌   | Robin Sacher  |
+| 11.1 | 13.12.2024 | NOK ❌   | Robin Sacher  |
+| 12.1 | 13.12.2024 | NOK ❌   | Robin Sacher  |
+| 12.2 | 13.12.2024 | OK ✅    | Damian Müller |
+| 12.3 | 13.12.2024 | OK ✅    | Damian Müller |
+| 14.1 | 13.12.2024 | OK ✅    | Damian Müller |
+
+Testbericht:
+Am 13.12.2024 wurden umfangreiche Tests der Webseite zur Verwaltung von Aufgaben und Einkaufslisten durchgeführt. Von insgesamt 19 Testfällen verliefen 11 erfolgreich, während 8 Testfälle fehlschlugen. Positiv hervorzuheben ist, dass die Benutzerverwaltung einwandfrei funktioniert. Auch grundlegende Aufgabenfunktionen wie das Erstellen, Löschen, die Zuweisung an Personen und das Markieren als erledigt liefen fehlerfrei. Die Navigation innerhalb der Seite und die SPA-Funktionalität zeigten ebenfalls keine Probleme, selbst in verschiedenen Browsern.
+
+Dennoch traten wesentliche Fehler in der Einkaufslistenverwaltung auf. Das Erstellen von Einkaufslisten, das Hinzufügen von Elementen sowie das Bearbeiten und Löschen von Listen oder Elementen funktionierten nicht wie erwartet.
+
+Um die Anwendung zu verbessern, sollten zunächst die Fehler in der Einkaufslistenverwaltung behoben werden, da diese Funktionen zentral für die Nutzer sind.
 
 ## 6 Auswerten
+
 Portfolioberichte:
-- Robin Sacher: 
-- Damian Müller: 
-- Julian Hitz: 
+
+- Robin Sacher: [text](https://portfolio.bbbaden.ch/view/view.php?t=118468fd554c4fd3f1d2)
+- Damian Müller:
+- Julian Hitz:
