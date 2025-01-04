@@ -147,4 +147,4 @@ Portfolioberichte:
 
 - Robin Sacher: [Portfoliobericht](https://portfolio.bbbaden.ch/view/view.php?t=118468fd554c4fd3f1d2)
 - Damian Müller: [Portfoliobericht] (https://portfolio.bbbaden.ch/view/view.php?t=f76ac29e8e88531d20f8)
-- Julian Hitz:
+- Julian Hitz: https://portfolio.bbbaden.ch/view/view.php?t=b62b5d39bcb8bcac4d70
